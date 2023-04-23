@@ -15,4 +15,44 @@ citation:
     url: https://ieeexplore.ieee.org/abstract/document/7027822
 bibliography: TPEL_ZGTI.bib
 google-scholar: true
+format:
+  html:
+    code-fold: true
+jupyter: python3
 ---
+
+For a demonstration of a line plot on a polar axis, see @fig-2. If theta is increased, see @fig-1
+
+```{python}
+#| label: fig-1
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 1 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+```{python}
+#| label: fig-2
+#| fig-cap: "Another line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+theta = 5 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
