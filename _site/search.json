@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My Featured Publications\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nAnalysis of D-Q Small-Signal Impedance of Grid-Tied Inverters\n\n\n\n\n\nThis paper analyzes the small-signal impedance of three-phase grid-tied inverters with feedback control and phase-locked loop (PLL) in the synchronous reference (d-q) frame.\n\n\n\n\n\n\nJan 30, 2015\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research_papers/TPEL_ZGTI.html",
+    "href": "research_papers/TPEL_ZGTI.html",
+    "title": "Analysis of D-Q Small-Signal Impedance of Grid-Tied Inverters",
+    "section": "",
+    "text": "CitationBibTeX citation:@article{wen2015,\n  author = {Wen, Bo},\n  title = {Analysis of {D-Q} {Small-Signal} {Impedance} of {Grid-Tied}\n    {Inverters}},\n  journal = {IEEE Transactions on Power Electronics},\n  date = {2015-01-30},\n  url = {https://ieeexplore.ieee.org/abstract/document/7027822},\n  doi = {10.1109/TPEL.2015.2398192},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nWen, Bo. 2015. “Analysis of D-Q Small-Signal Impedance of\nGrid-Tied Inverters.” IEEE Transactions on Power\nElectronics, January. https://doi.org/10.1109/TPEL.2015.2398192."
+  }
+]

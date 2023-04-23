@@ -1,0 +1,18 @@
+---
+title: "Analysis of D-Q Small-Signal Impedance of Grid-Tied Inverters"
+description: | 
+  This paper analyzes the small-signal impedance of three-phase grid-tied inverters with feedback control and phase-locked loop (PLL) in the synchronous reference (d-q) frame. 
+date: 30 January 2015
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+    affiliation: University of Cambridge
+    affiliation-url: https://cam.ac.uk
+citation:
+    type: article-journal
+    container-title: "IEEE Transactions on Power Electronics"
+    doi: 10.1109/TPEL.2015.2398192
+    url: https://ieeexplore.ieee.org/abstract/document/7027822
+bibliography: TPEL_ZGTI.bib
+google-scholar: true
+---
