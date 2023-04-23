@@ -1,7 +1,23 @@
 ---
-title: "My_Website"
+title: "Bo Wen -- Power Electronics Engineer"
+about:
+    template: jolla #solana #
+    image: "images/Bo_Wen.jpg"
+    links:
+        - icon: google
+          text: Google Scholar
+          href: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+          target: "_blank"
+        - icon: github
+          text: Github
+          href: https://github.com/wenboklose
+          target: "_blank"
+toc: false
 ---
+ 
+### Welcome to my personal website!
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+As a researcher, engineer, reader, and coffee lover, my area of expertise
+centers around Power Electronics technology, with a specific focus on expediting
+the transition to low-carbon technologies, such as renewable energy, electric vehicles,
+and data center power systems.

@@ -2,18 +2,32 @@ project:
   type: website
 
 website:
-  title: "My_Website"
+  title: "Bo Wen's Website"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - text: More
+        menu:
+          - href: projects.qmd
+            text: Projects
+          - text: Blog
+            href: blog.qmd
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: Lumen #Morph #Pulse #Sandstone #Sketchy #Solar #Superhero #vapor
+      dark: [Lumen, theme-dark.scss]
     css: styles.css
     toc: true
-
-
-
+    
+languages:
+  r:
+    path: C:/Program Files/R/R-4.2.3/bin/Rscript.exe
+  python:
+    path: C:/Users/wenbo/anaconda3/python.exe

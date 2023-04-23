@@ -1,5 +1,33 @@
 ---
-title: "About"
+title: "About me"
 ---
 
-About this site
+Welcome to my personal website! I am a power electronics engineer currently with Delta Electronics.
+
+## Bio
+
+Dr. Bo Wen received his B.S. degree from Xi’an Jiaotong University, China, M.S. and Ph.D. degrees from Virginia Tech, USA, in 2006, 2011, and 2014 in electrical engineering. He was a Research Associate with the University of Cambridge, Cambridge, and a Lecturer with the School of Electrical and Electronic Engineering, the University of Manchester, Manchester, U.K. Dr. Wen is currently a Research Assistant Professor at CPES. He received the 2017 Prize Paper Award in the IEEE Transactions on Power Electronics and the 2019 Outstanding Reviewer Award from the same journal. Dr. Wen’s current research interests include power conversion, power electronics systems modeling, integration.
+
+## Education
+
+**Virginia Tech** | Blacksburg, VA
+
+Ph.D. in Electrical Engineering | September 2011 - November 2014
+
+**Virginia Tech** | Blacksburg, VA
+
+M.S. in Electrical Engineering | September 2009 - May 2011
+
+**Xi'an Jiaotong University** | Xi'an, China
+
+B.S. in Electrical Engineering | September 2002 - May 2006
+
+## Experience
+
+**Delta Electronics** | Sr. Member of the R&D Staff | November 2022 - Present
+
+**Virginia Tech** | Research Assistant Professor | January 2018 - October 2022
+
+**The University of Manchester** | Lecturer in Power Electronic Systems | August 2016 - February 2018
+
+**University of Cambridge** | Research Associate | February 2015 - July 2016
