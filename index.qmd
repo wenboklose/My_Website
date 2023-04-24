@@ -1,7 +1,7 @@
 ---
 title: "Bo Wen -- Power Electronics Engineer"
 about:
-    template: jolla #solana #
+    template: jolla #trestles #solana #
     image: "images/Bo_Wen.jpg"
     links:
         - icon: google
@@ -12,6 +12,11 @@ about:
           text: Github
           href: https://github.com/wenboklose
           target: "_blank"
+# format:
+#   html:
+#     fig-height: 4
+#     fig-width: 4
+#     fig-align: center
 toc: false
 ---
  

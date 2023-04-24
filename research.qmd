@@ -7,7 +7,8 @@ description: |
     My research interests encompass high-frequency power converter, modeling and control of power electronics systems, and data center power solutions.
 author: Bo Wen
 affiliation: MPEL
-date: "`r Sys.Date()`"
+date: today
+date-format: iso
 output: html
 ---
 

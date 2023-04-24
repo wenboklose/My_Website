@@ -18,7 +18,12 @@ google-scholar: true
 format:
   html:
     code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
 jupyter: python3
+execute: 
+  echo: false
 ---
 
 For a demonstration of a line plot on a polar axis, see @fig-2. If theta is increased, see @fig-1
@@ -26,6 +31,8 @@ For a demonstration of a line plot on a polar axis, see @fig-2. If theta is incr
 ```{python}
 #| label: fig-1
 #| fig-cap: "A line plot on a polar axis"
+#| code-line-numbers: true
+#| echo: true
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,6 +50,9 @@ plt.show()
 ```{python}
 #| label: fig-2
 #| fig-cap: "Another line plot on a polar axis"
+#| code-line-numbers: true
+#| "id": {"description": "This is the code cell for Figure.2"}
+#| fig-align: left
 
 import numpy as np
 import matplotlib.pyplot as plt
