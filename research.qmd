@@ -4,7 +4,7 @@ listing:
   contents: research_papers
   type: default
 description: |
-    My research interests encompass high-frequency power converter, modeling and control of power electronics systems, and data center power solutions.
+    My research interests encompass modeling and control of power electronics systems, battery energy storage system, microgrid, high-frequency power converter and data center power system.
 author: Bo Wen
 affiliation: MPEL
 date: today

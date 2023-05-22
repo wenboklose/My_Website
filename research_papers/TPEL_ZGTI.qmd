@@ -1,7 +1,7 @@
 ---
 title: "Analysis of D-Q Small-Signal Impedance of Grid-Tied Inverters"
 description: | 
-  This paper analyzes the small-signal impedance of three-phase grid-tied inverters with feedback control and phase-locked loop (PLL) in the synchronous reference (d-q) frame. 
+  This paper unveils an interesting and important feature of three-phase grid-tied inverters - namely, that its q-q channel impedance behaves as a negative incremental resistor. An example shows that under weak grid conditions, a change of the PLL bandwidth could lead the inverter system to unstable conditions as a result of this behavior. [<i class="bi bi-github"></i>](https://github.com/wenboklose/TPEL_GTI_ZDQ.git)
 date: 30 January 2015
 author:
   - name: Bo Wen

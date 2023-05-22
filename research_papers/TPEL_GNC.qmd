@@ -1,7 +1,7 @@
 ---
 title: "Small-Signal Stability Analysis of Three-Phase AC Systems in the Presence of Constant Power Loads Based on Measured d-q Frame Impedances"
 description: | 
-  This paper investigates the small-signal stability of a balanced three-phase ac system using measured d-q frame impedances. The experimental results obtained validated the use of ac impedances as a valuable dynamic analysis tool for ac system integration, in perfect dualism with the dc case. 
+  This paper investigates the small-signal stability of a balanced three-phase ac system using measured d-q frame impedances. The experimental results obtained validated the use of ac impedances as a valuable dynamic analysis tool for ac system integration, in perfect dualism with the dc case. [<i class="bi bi-github"></i>](https://github.com/wenboklose/TPEL_GNC.git)
 date: 04 December 2014
 author:
   - name: Bo Wen

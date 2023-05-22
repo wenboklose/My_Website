@@ -1,7 +1,7 @@
 ---
-title: "Analysis of D-Q Small-Signal Impedance of Grid-Tied Inverters"
+title: "AC Stability Analysis and dq Frame Impedance Specifications in Power-Electronics-Based Distributed Power Systems"
 description: | 
-  This paper shows that for a three-phase power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, the ac system can then be treated as two decoupled dc systems. As a result, load system impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems.
+  This paper shows that for a three-phase power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, the ac system can then be treated as two decoupled dc systems. As a result, load system impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems. [<i class="bi bi-github"></i>](https://github.com/wenboklose/JESTPE_Zdq_Spec.git)
 date: 18 July 2017
 author:
   - name: Bo Wen
@@ -28,5 +28,6 @@ execute:
 ### Abstract:
 
 Small-signal stability in balanced three-phase systems is typically investigated by means of the generalized Nyquist stability criterion (GNC) that involves operations on the source and load subsystems' impedance matrices. Eigenvalues of the ratio of these impedance matrices should be calculated for stability judgment. This paper shows that for a power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, stability, in this case, is fully determined by the scalar ratios formed by the impedance elements seen across the d-axis and q-axis interfaces. A three-phase ac system can then be treated as two decoupled dc systems. As a result, the ac stability analysis can also be conducted based on insightful impedance quantities; impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems. The major contribution of this paper is related to the simplification of the GNC analysis with good experimental validations. Limitation of the proposed method is that the systems have to work under high power factor condition. However, such limitation is not a problem for many power-electronics-based distributed power systems.
+
 
 ![Fig.1 Multi Converter System](/images/Research/JESTPE_Fig20.jpg){width=80%}
