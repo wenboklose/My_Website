@@ -26,43 +26,8 @@ execute:
   echo: false
 ---
 
-For a demonstration of a line plot on a polar axis, see @fig-2. If theta is increased, see @fig-1
+### Abstract:
 
-```{python}
-#| label: fig-1
-#| fig-cap: "A line plot on a polar axis"
-#| code-line-numbers: true
-#| echo: true
+This paper analyzes the small-signal impedance of three-phase grid-tied inverters with feedback control and phase-locked loop (PLL) in the synchronous reference (d-q) frame. The result unveils an interesting and important feature of three-phase grid-tied inverters - namely, that its q-q channel impedance behaves as a negative incremental resistor. Moreover, this paper shows that this behavior is a consequence of grid synchronization, where the bandwidth of the PLL determines the frequency range of the resistor behavior, and the power rating of the inverter determines the magnitude of the resistor. Advanced PLL, current, and power control strategies do not change this feature. An example shows that under weak grid conditions, a change of the PLL bandwidth could lead the inverter system to unstable conditions as a result of this behavior. Harmonic resonance and instability issues can be analyzed using the proposed impedance model. Simulation and experimental measurements verify the analysis.
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 1 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-```{python}
-#| label: fig-2
-#| fig-cap: "Another line plot on a polar axis"
-#| code-line-numbers: true
-#| "id": {"description": "This is the code cell for Figure.2"}
-#| fig-align: left
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-theta = 5 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
+![Fig.1 Zqq_GTI](/images/Research/TPEL_ZGTI_Fig28.jpg){width=80%}

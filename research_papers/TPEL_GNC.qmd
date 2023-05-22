@@ -1,0 +1,32 @@
+---
+title: "Small-Signal Stability Analysis of Three-Phase AC Systems in the Presence of Constant Power Loads Based on Measured d-q Frame Impedances"
+description: | 
+  This paper investigates the small-signal stability of a balanced three-phase ac system using measured d-q frame impedances. The experimental results obtained validated the use of ac impedances as a valuable dynamic analysis tool for ac system integration, in perfect dualism with the dc case. 
+date: 04 December 2014
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+    affiliation: Virginia Tech
+    affiliation-url: https://www.vt.edu
+citation:
+    type: article-journal
+    container-title: "IEEE Transactions on Power Electronics"
+    doi: 10.1109/TPEL.2014.2378731
+    url: https://ieeexplore.ieee.org/document/6975228
+bibliography: TPEL_GNC.bib
+google-scholar: true
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+### Abstract:
+
+Small-signal stability is of great concern for electrical power systems with a large number of regulated power converters. In the case of dc systems, stability can be predicted by examining the locus described by the ratio of the source and load impedances in the complex plane per the Nyquist stability criterion. For balanced three-phase ac systems the same impedance-based method applies, for which this paper uses impedances in the synchronous rotating reference (d-q) frame. Small-signal stability can be determined by applying the generalized Nyquist stability criterion (GNC). This approach relies on the actual measurement of these impedances, which up to now has severely hindered its applicability. Addressing this shortcoming, this paper investigates the small-signal stability of a three-phase ac system using measured d-q frame impedances. The results obtained show how the stability at the ac interface can be easily and readily predicted using the measured impedances and the GNC, thus illustrating the practicality of the approach, and validating the use of ac impedances as a valuable dynamic analysis tool for ac system integration, in perfect dualism with the dc case.
+
+![Fig.1 GNC](/images/Research/TPEL_GNC_Fig15.jpg){width=80%}

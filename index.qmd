@@ -24,5 +24,5 @@ toc: false
 
 As a researcher, engineer, reader, and coffee lover, my area of expertise
 centers around Power Electronics technology, with a specific focus on expediting
-the transition to low-carbon technologies, such as renewable energy, electric vehicles,
+the transition to low-carbon technologies, such as renewable energy, microgrid, electric vehicles,
 and data center power systems.
