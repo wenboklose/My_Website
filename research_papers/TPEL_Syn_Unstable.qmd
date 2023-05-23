@@ -1,0 +1,32 @@
+---
+title: "Impedance-Based Analysis of Grid-Synchronization Stability for Three-Phase Paralleled Converters"
+description: | 
+  This paper shows the synchronization instability between inverter-based resouces due to the impedance interaction (or "controller interaction" used by other publications) caused by phase-locked loop regulator designs. This paper is a TPEL prize paper.[<i class="bi bi-github"></i>](https://github.com/wenboklose/TPEL_GTI_ZDQ.git)
+date: 03 April 2015
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+    affiliation: University of Cambridge
+    affiliation-url: https://cam.ac.uk
+citation:
+    type: article-journal
+    container-title: "IEEE Transactions on Power Electronics"
+    doi: 10.1109/TPEL.2015.2419712
+    url: https://ieeexplore.ieee.org/abstract/document/7079502
+bibliography: TPEL_Syn_Unstable.bib
+google-scholar: true
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+### Abstract:
+
+Grid synchronization stability issues and subsynchronous oscillations between synchronous generators exist in electrical power systems. Three-phase voltage-source converters (VSCs) are being installed more and more in the grid to improve efficiency or to utilize renewable energy sources. The same stability issues between VSCs are also reported and analyzed using a small-signal model of phase-locked loops (PLLs). This paper proposes a different impedance-based analysis method. The proposed method shows that synchronization instability in a VSC system is due to the negative incremental resistance behavior of grid-tied inverters' impedance when they are modeled in the d-q frame. System can be stabilized simply by changing the inverter's PLL design. Experimental results verify the analysis and the proposed method.
+
+![Fig.1 Synchronization Instability](/images/Research/TPEL_Syn_Unstable_Fig27_b.jpg){width=80%}
