@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/2023/09/index.html"
+    ]
+  },
+  {
     "listing": "/research.html",
     "items": [
       "/research_papers/JESTPE_Zdqspec.html",

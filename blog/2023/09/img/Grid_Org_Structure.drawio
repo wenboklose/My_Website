@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="t4phup3A1MZZtS2PI7Vo" name="Page-1">
+        <mxGraphModel dx="2141" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="85" value="graph TD;&#10;    FERC--&gt;NERC;&#10;    NERC--&gt;WECC;&#10;    NERC--&gt;MISO;&#10;    NERC--&gt;ERCOT;&#10;    NERC--&gt;NPCC;&#10;    NERC--&gt;RF;&#10;    NERC--&gt;SERC;" style="shadow=0;dashed=0;align=left;strokeWidth=1;shape=mxgraph.mermaid.abstract.mermaid;labelBackgroundColor=#ffffff;noLabel=1;theme=default;" vertex="1" parent="1">
+                    <mxGeometry x="-780" y="430" width="530" height="200" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

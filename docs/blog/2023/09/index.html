@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Bo Wen">
-<meta name="dcterms.date" content="2017-07-18">
-<meta name="description" content="This paper shows that for a three-phase power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, the ac system can then be treated as two decoupled dc systems. As a result, load system impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems. ">
+<meta name="dcterms.date" content="2023-09-30">
+<meta name="description" content="This gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
 
-<title>Bo Wen’s Website - AC Stability Analysis and dq Frame Impedance Specifications in Power-Electronics-Based Distributed Power Systems</title>
+<title>Bo Wen’s Website - My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,24 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,20 +64,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
-<meta name="citation_title" content="AC Stability Analysis and dq Frame Impedance Specifications in Power-Electronics-Based Distributed Power Systems">
-<meta name="citation_author" content="Bo Wen">
-<meta name="citation_publication_date" content="2017-07-18">
-<meta name="citation_cover_date" content="2017-07-18">
-<meta name="citation_year" content="2017">
-<meta name="citation_online_date" content="2017-07-18">
-<meta name="citation_fulltext_html_url" content="https://ieeexplore.ieee.org/document/7983362">
-<meta name="citation_doi" content="10.1109/JESTPE.2017.2728640">
-<meta name="citation_language" content="en">
-<meta name="citation_journal_title" content="IEEE Journal of Emerging and Selected Topics in Power Electronics">
-<meta name="citation_reference" content="citation_title=AC stability analysis and dq frame impedance specifications in power-electronics-based distributed power systems;,citation_author=Bo Wen;,citation_author=Rolando Burgos;,citation_author=Dushan Boroyevich;,citation_author=Paolo Mattavelli;,citation_author=Zhiyu Shen;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=4;,citation_doi=10.1109/JESTPE.2017.2728640;,citation_volume=5;,citation_journal_title=IEEE Journal of Emerging and Selected Topics in Power Electronics;">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Bo Wen’s Website - My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs">
+<meta property="og:description" content="This gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
+<meta property="og:image" content="img/Grid Code 2.png">
+<meta property="og:site-name" content="Bo Wen's Website">
+<meta name="twitter:title" content="Bo Wen’s Website - My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs">
+<meta name="twitter:description" content="This gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
+<meta name="twitter:image" content="img/Grid Code 2.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Bo Wen’s Website</span>
     </a>
   </div>
@@ -98,15 +98,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html" rel="" target="">
+    <a class="nav-link" href="../../../research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -115,11 +115,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-more">    
         <li>
-    <a class="dropdown-item" href="../projects.qmd" rel="" target="">
+    <a class="dropdown-item" href="../../../projects.qmd" rel="" target="">
  <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../blog.html" rel="" target="">
+    <a class="dropdown-item" href="../../../blog.html" rel="" target="">
  <span class="dropdown-text">Blog</span></a>
   </li>  
     </ul>
@@ -141,7 +141,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract:</a></li>
+  <li><a href="#the-north-america-electrical-grid-interconnections" id="toc-the-north-america-electrical-grid-interconnections" class="nav-link active" data-scroll-target="#the-north-america-electrical-grid-interconnections">The North America Electrical Grid Interconnections</a></li>
+  <li><a href="#organization-structure-of-the-us-electrical-grid" id="toc-organization-structure-of-the-us-electrical-grid" class="nav-link" data-scroll-target="#organization-structure-of-the-us-electrical-grid">Organization Structure of the US Electrical Grid</a></li>
+  <li><a href="#regulated-and-deregulated-electricity-markets" id="toc-regulated-and-deregulated-electricity-markets" class="nav-link" data-scroll-target="#regulated-and-deregulated-electricity-markets">Regulated and Deregulated Electricity Markets</a></li>
+  <li><a href="#isos-and-rtos" id="toc-isos-and-rtos" class="nav-link" data-scroll-target="#isos-and-rtos">ISOs and RTOs</a></li>
   </ul>
 </nav>
     </div>
@@ -150,38 +153,37 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AC Stability Analysis and dq Frame Impedance Specifications in Power-Electronics-Based Distributed Power Systems</h1>
-</div>
+<h1 class="title">My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Power System</div>
+    <div class="quarto-category">Power Grid</div>
+    <div class="quarto-category">NERC</div>
+    <div class="quarto-category">WECC</div>
+    <div class="quarto-category">ERCOT</div>
+    <div class="quarto-category">CAISO</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    <p>This paper shows that for a three-phase power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, the ac system can then be treated as two decoupled dc systems. As a result, load system impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems. <a href="https://github.com/wenboklose/JESTPE_Zdq_Spec.git"><i class="bi bi-github"></i></a></p>
+    This gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.
   </div>
 </div>
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&amp;hl=en">Bo Wen</a> </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.manchester.ac.uk">
-            The University of Manchester
-            </a>
-          </p>
-      </div>
-    </div>
 
 <div class="quarto-title-meta">
 
-      
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&amp;hl=en">Bo Wen</a> </p>
+          </div>
+  </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 18, 2017</p>
+      <p class="date">September 30, 2023</p>
     </div>
   </div>
   
@@ -191,37 +193,123 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="abstract" class="level3">
-<h3 class="anchored" data-anchor-id="abstract">Abstract:</h3>
-<p>Small-signal stability in balanced three-phase systems is typically investigated by means of the generalized Nyquist stability criterion (GNC) that involves operations on the source and load subsystems’ impedance matrices. Eigenvalues of the ratio of these impedance matrices should be calculated for stability judgment. This paper shows that for a power-electronics-based distributed power system, impedance matrices of subsystems can be designed as diagonal dominant. Therefore, stability, in this case, is fully determined by the scalar ratios formed by the impedance elements seen across the d-axis and q-axis interfaces. A three-phase ac system can then be treated as two decoupled dc systems. As a result, the ac stability analysis can also be conducted based on insightful impedance quantities; impedance specification criteria developed for dc systems can be readily applied to ensure stability in ac systems. The major contribution of this paper is related to the simplification of the GNC analysis with good experimental validations. Limitation of the proposed method is that the systems have to work under high power factor condition. However, such limitation is not a problem for many power-electronics-based distributed power systems.</p>
-<div class="quarto-figure quarto-figure-center">
+<section id="the-north-america-electrical-grid-interconnections" class="level2">
+<h2 class="anchored" data-anchor-id="the-north-america-electrical-grid-interconnections">The North America Electrical Grid Interconnections</h2>
+<p>There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in <a href="#tbl-powergrids">Table&nbsp;1</a>. Interconnections are grouped from balancing authority areas which are connected by metered high-voltage tie lines. There are over 60 <a href="https://www.energy.gov/sites/default/files/2023-08/Balancing%20Authority%20Backgrounder_2022-Formatted_041723_508.pdf">Balancing Authorities</a> in the U.S.A. and Canada. They are typically either utilities, power marketing administtaions, or a group of utilities that have formed reional transmission organizations (RTOs) and independent system operators (ISOs).</p>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div id="tbl-powergrids" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Generation Capacity (GW)</th>
+<th style="text-align: left;">Covers</th>
+<th style="text-align: left;">Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Northern Chinese State Grid</td>
+<td style="text-align: left;">1,700</td>
+<td style="text-align: left;">Northern China</td>
+<td style="text-align: left;">#1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Continental Europe</td>
+<td style="text-align: left;">859</td>
+<td style="text-align: left;">24 European countries</td>
+<td style="text-align: left;">#2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Eastern Interconnection</td>
+<td style="text-align: left;">610</td>
+<td style="text-align: left;">Eastern US</td>
+<td style="text-align: left;">#3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Western Interconnection</td>
+<td style="text-align: left;">265</td>
+<td style="text-align: left;">Western US</td>
+<td style="text-align: left;">#7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Texas Interconnection</td>
+<td style="text-align: left;">140</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">#13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quebec Interconnection</td>
+<td style="text-align: left;">42</td>
+<td style="text-align: left;">Quebec</td>
+<td style="text-align: left;">#15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="organization-structure-of-the-us-electrical-grid" class="level2">
+<h2 class="anchored" data-anchor-id="organization-structure-of-the-us-electrical-grid">Organization Structure of the US Electrical Grid</h2>
+<p>There are currently six regional entity (<a href="https://en.wikipedia.org/wiki/Regional_entity">RE</a>) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council (<a href="https://www.wecc.org/Pages/home.aspx">WECC</a>), the Midcontinent Independent System Operator (<a href="https://www.mro.net/">MISO</a>), the Electric Reliability Council of Texas (<a href="https://www.ercot.com/">ERCOT</a>), the Northeast Power Coordinating Council (<a href="https://www.npcc.org/">NPCC</a>), the ReliabilityFirst Corporation (<a href="https://rfirst.org/">RF</a>), and the SERC Reliability Corporation (<a href="https://www.serc1.org/">SERC</a>). The six REs are under the authority of the North American Electric Reliability Corporation (<a href="https://www.nerc.com/Pages/default.aspx">NERC</a>), which is a non-profit international regulatory authority who assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission (<a href="https://www.ferc.gov/">FERC</a>). In the U.S.A., The FERC is an independent agency within the Department of Energy (<a href="https://www.energy.gov/">DOE</a>) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines as well as licensing hydropower projects. <a href="#fig-mermaid">Figure&nbsp;1</a> shows the organization structure of the North America electrical grid.</p>
+<div class="cell" data-fig-width="6.5">
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="..\images/Research/JESTPE_Fig20.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Fig.1 Multi Converter System</figcaption>
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">graph TD;
+    FERC--&gt;NERC;
+    NERC--&gt;WECC;
+    NERC--&gt;MISO;
+    NERC--&gt;ERCOT;
+    NERC--&gt;NPCC;
+    NERC--&gt;RF;
+    NERC--&gt;SERC;
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: U.S. Power Grid Organization Structure</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="regulated-and-deregulated-electricity-markets" class="level2">
+<h2 class="anchored" data-anchor-id="regulated-and-deregulated-electricity-markets">Regulated and Deregulated Electricity Markets</h2>
+<p>In the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and service. In a regulated electricity market, utilities own and operate all aspects of the electric system, including: power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. <a href="#fig-regulated">Figure&nbsp;2</a> shows the regulated and deregulated electricity markets in the US.</p>
+<div class="cell" data-fig-width="6.5">
+<div class="cell-output-display">
+<div id="fig-regulated" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-regulated">graph TD;
+    Regulated--&gt;|Government|Price;
+    Deregulated--&gt;|Market|Price;
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;2: Regulated and Deregulated Electricity Markets in the US</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>There are 17 States and the District of Columbia in the US that have <a href="https://www.electricchoice.com/map-deregulated-energy-markets/">deregulated electricity markets</a>.</p>
+</section>
+<section id="isos-and-rtos" class="level2">
+<h2 class="anchored" data-anchor-id="isos-and-rtos">ISOs and RTOs</h2>
+<p>ISOs and RTOs are independent, non-profit organizations that ensure the reliability of the grid and operate wholesale electricity markets. ISOs and RTOs are regulated by the Federal Energy Regulatory Commission (FERC). ISOs were set according to FERC Order No.&nbsp;888 and No.&nbsp;889. Order No.&nbsp;2000 was issued to encourage the formation of RTOs. ISOs and RTOs are similar in that they both operate wholesale electricity markets and ensure the reliability of the grid. The main difference between ISOs and RTOs is that RTOs are responsible for the operation of the transmission system, while ISOs are not. <a href="#fig-iso-rto">Figure&nbsp;3</a> shows the ISOs and RTOs in the U.S.A. You can find more information about ISOs and RTOs on this <a href="https://www.ferc.gov/electric-power-markets">page</a>.</p>
+<div id="fig-iso-rto" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/RTOsISOsUSA.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: RTOs and ISOs Map cited from FERC Website</figcaption>
 </figure>
 </div>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{wen2017,
-  author = {Wen, Bo},
-  title = {AC {Stability} {Analysis} and Dq {Frame} {Impedance}
-    {Specifications} in {Power-Electronics-Based} {Distributed} {Power}
-    {Systems}},
-  journal = {IEEE Journal of Emerging and Selected Topics in Power
-    Electronics},
-  date = {2017-07-18},
-  url = {https://ieeexplore.ieee.org/document/7983362},
-  doi = {10.1109/JESTPE.2017.2728640},
-  langid = {en}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-wen2017" class="csl-entry quarto-appendix-citeas" role="listitem">
-Wen, Bo. 2017. <span>“AC Stability Analysis and Dq Frame Impedance
-Specifications in Power-Electronics-Based Distributed Power
-Systems.”</span> <em>IEEE Journal of Emerging and Selected Topics in
-Power Electronics</em>, July. <a href="https://doi.org/10.1109/JESTPE.2017.2728640">https://doi.org/10.1109/JESTPE.2017.2728640</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
