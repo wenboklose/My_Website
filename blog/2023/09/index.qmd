@@ -4,7 +4,7 @@ author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
 date: 2023-09-30
-description: "This gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO."
+description: "This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO."
 image: img/NorthAmericaPowerGrid.png
 twitter-card: 
     image: "img/Grid Code 2.png"
@@ -31,7 +31,7 @@ execute:
 
 ## The North America Electrical Grid Interconnections
 
-There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in @tbl-powergrids. Interconnections are grouped from balancing authority areas which are connected by metered high-voltage tie lines. There are over 60 [Balancing Authorities](https://www.energy.gov/sites/default/files/2023-08/Balancing%20Authority%20Backgrounder_2022-Formatted_041723_508.pdf) in the U.S.A. and Canada. They are typically either utilities, power marketing administtaions, or a group of utilities that have formed reional transmission organizations (RTOs) and independent system operators (ISOs). 
+There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in @tbl-powergrids. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 [Balancing Authorities](https://www.energy.gov/sites/default/files/2023-08/Balancing%20Authority%20Backgrounder_2022-Formatted_041723_508.pdf) in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs). 
 
 ```{python}
 #| label: tbl-powergrids
@@ -53,7 +53,7 @@ Markdown(tabulate(
 
 ## Organization Structure of the US Electrical Grid
 
-There are currently six regional entity ([RE](https://en.wikipedia.org/wiki/Regional_entity)) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council ([WECC](https://www.wecc.org/Pages/home.aspx)), the Midcontinent Independent System Operator ([MISO](https://www.mro.net/)), the Electric Reliability Council of Texas ([ERCOT](https://www.ercot.com/)), the Northeast Power Coordinating Council ([NPCC](https://www.npcc.org/)), the ReliabilityFirst Corporation ([RF](https://rfirst.org/)), and the SERC Reliability Corporation ([SERC](https://www.serc1.org/)). The six REs are under the authority of the North American Electric Reliability Corporation ([NERC](https://www.nerc.com/Pages/default.aspx)), which is a non-profit international regulatory authority who assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission ([FERC](https://www.ferc.gov/)). In the U.S.A., The FERC is an independent agency within the Department of Energy ([DOE](https://www.energy.gov/)) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines as well as licensing hydropower projects. @fig-mermaid shows the organization structure of the North America electrical grid.
+There are currently six regional entities ([RE](https://en.wikipedia.org/wiki/Regional_entity)) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council ([WECC](https://www.wecc.org/Pages/home.aspx)), the Midcontinent Independent System Operator ([MISO](https://www.mro.net/)), the Electric Reliability Council of Texas ([ERCOT](https://www.ercot.com/)), the Northeast Power Coordinating Council ([NPCC](https://www.npcc.org/)), the ReliabilityFirst Corporation ([RF](https://rfirst.org/)), and the SERC Reliability Corporation ([SERC](https://www.serc1.org/)). The six REs are under the authority of the North American Electric Reliability Corporation ([NERC](https://www.nerc.com/Pages/default.aspx)), which is a non-profit international regulatory authority that assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission ([FERC](https://www.ferc.gov/)). In the U.S.A., The FERC is an independent agency within the Department of Energy ([DOE](https://www.energy.gov/)) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines and licensing hydropower projects. @fig-mermaid shows the organizational structure of the North American electrical grid.
 
 ```{mermaid}
 %%| label: fig-mermaid
@@ -72,7 +72,7 @@ graph TD;
 
 ## Regulated and Deregulated Electricity Markets
 
-In the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and service. In a regulated electricity market, utilities own and operate all aspects of the electric system, including: power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. @fig-regulated shows the regulated and deregulated electricity markets in the US.
+In the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and services. In a regulated electricity market, utilities own and operate all aspects of the electric system, including power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. @fig-regulated shows the regulated and deregulated electricity markets in the US.
 
 ```{mermaid}
 %%| label: fig-regulated
@@ -84,7 +84,7 @@ graph TD;
     Deregulated-->|Market|Price;
 ```
 
-There are 17 States and the District of Columbia in the US that have [deregulated electricity markets](https://www.electricchoice.com/map-deregulated-energy-markets/).
+There are 17 States and the District of Columbia that have [deregulated electricity markets](https://www.electricchoice.com/map-deregulated-energy-markets/).
 
 ## ISOs and RTOs
 
