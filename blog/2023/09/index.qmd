@@ -64,7 +64,7 @@ graph TD;
     FERC-->NERC;
     NERC-->WECC;
     NERC-->MISO;
-    NERC-->ERCOT;
+    NERC-->Texas RE;
     NERC-->NPCC;
     NERC-->RF;
     NERC-->SERC;
