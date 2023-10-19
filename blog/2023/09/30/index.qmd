@@ -29,9 +29,9 @@ execute:
   echo: false
 ---
 
-## Modeling and Simulation of Power System
+## The North America Electrical Grid Interconnections
 
-After major disturbance 
+There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in @tbl-powergrids. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 [Balancing Authorities](https://www.energy.gov/sites/default/files/2023-08/Balancing%20Authority%20Backgrounder_2022-Formatted_041723_508.pdf) in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs). 
 
 ```{python}
 #| label: tbl-powergrids

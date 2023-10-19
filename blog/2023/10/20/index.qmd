@@ -11,12 +11,13 @@ twitter-card:
 open-graph: 
     image: "img/Grid Code 2.png"
 categories:
-  - Power System
-  - Power Grid
-  - NERC
-  - WECC
-  - ERCOT
-  - CAISO
+  - Model
+  - PSS/E
+  - PSCAD
+  - Electromagnetic
+  - Positive Sequence
+  - Requirements
+  - Electranix
 # doi: 10.59350/cwrq4-m7h10
 citation: false
 format:
