@@ -1,11 +1,11 @@
 ---
-title: "My Notes on North America Power Grid -- Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs"
+title: "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation"
 author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
-date: 2023-09-30
+date: 2023-10-20
 description: "This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO."
-image: img/NorthAmericaPowerGrid.png
+image: img/Grid Code 2.png
 twitter-card: 
     image: "img/Grid Code 2.png"
 open-graph: 

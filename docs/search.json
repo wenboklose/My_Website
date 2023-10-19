@@ -28,37 +28,72 @@
     "text": "Experience\nDelta Electronics | Sr. Member of the R&D Staff | November 2022 - Present\nVirginia Tech | Research Assistant Professor | January 2018 - October 2022\nThe University of Manchester | Lecturer in Power Electronic Systems | August 2016 - February 2018\nUniversity of Cambridge | Research Associate | February 2015 - July 2016"
   },
   {
-    "objectID": "blog/2023/09/index.html",
-    "href": "blog/2023/09/index.html",
+    "objectID": "blog/2023/09/30/index.html",
+    "href": "blog/2023/09/30/index.html",
+    "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
+    "section": "",
+    "text": "After major disturbance\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
+  },
+  {
+    "objectID": "blog/2023/09/30/index.html#the-north-america-electrical-grid-interconnections",
+    "href": "blog/2023/09/30/index.html#the-north-america-electrical-grid-interconnections",
     "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
     "section": "",
     "text": "There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in Table 1. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 Balancing Authorities in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs).\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
   },
   {
-    "objectID": "blog/2023/09/index.html#the-north-america-electrical-grid-interconnections",
-    "href": "blog/2023/09/index.html#the-north-america-electrical-grid-interconnections",
-    "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
-    "section": "",
-    "text": "There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in Table 1. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 Balancing Authorities in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs).\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
-  },
-  {
-    "objectID": "blog/2023/09/index.html#organization-structure-of-the-us-electrical-grid",
-    "href": "blog/2023/09/index.html#organization-structure-of-the-us-electrical-grid",
+    "objectID": "blog/2023/09/30/index.html#organization-structure-of-the-us-electrical-grid",
+    "href": "blog/2023/09/30/index.html#organization-structure-of-the-us-electrical-grid",
     "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
     "section": "Organization Structure of the US Electrical Grid",
     "text": "Organization Structure of the US Electrical Grid\nThere are currently six regional entities (RE) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council (WECC), the Midcontinent Independent System Operator (MISO), the Electric Reliability Council of Texas (ERCOT), the Northeast Power Coordinating Council (NPCC), the ReliabilityFirst Corporation (RF), and the SERC Reliability Corporation (SERC). The six REs are under the authority of the North American Electric Reliability Corporation (NERC), which is a non-profit international regulatory authority that assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission (FERC). In the U.S.A., The FERC is an independent agency within the Department of Energy (DOE) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines and licensing hydropower projects. Figure 1 shows the organizational structure of the North American electrical grid.\n\n\n\n\n\ngraph TD;\n    FERC--&gt;NERC;\n    NERC--&gt;WECC;\n    NERC--&gt;MISO;\n    NERC--&gt;TexasRE;\n    NERC--&gt;NPCC;\n    NERC--&gt;RF;\n    NERC--&gt;SERC;\n\n\nFigure 1: U.S. Power Grid Organization Structure"
   },
   {
-    "objectID": "blog/2023/09/index.html#regulated-and-deregulated-electricity-markets",
-    "href": "blog/2023/09/index.html#regulated-and-deregulated-electricity-markets",
+    "objectID": "blog/2023/09/30/index.html#regulated-and-deregulated-electricity-markets",
+    "href": "blog/2023/09/30/index.html#regulated-and-deregulated-electricity-markets",
     "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
     "section": "Regulated and Deregulated Electricity Markets",
     "text": "Regulated and Deregulated Electricity Markets\nIn the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and services. In a regulated electricity market, utilities own and operate all aspects of the electric system, including power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. Figure 2 shows the regulated and deregulated electricity markets in the US.\n\n\n\n\n\ngraph TD;\n    Regulated--&gt;|Government|Price;\n    Deregulated--&gt;|Market|Price;\n\n\nFigure 2: Regulated and Deregulated Electricity Markets in the US\n\n\n\n\nThere are 17 States and the District of Columbia that have deregulated electricity markets."
   },
   {
-    "objectID": "blog/2023/09/index.html#isos-and-rtos",
-    "href": "blog/2023/09/index.html#isos-and-rtos",
+    "objectID": "blog/2023/09/30/index.html#isos-and-rtos",
+    "href": "blog/2023/09/30/index.html#isos-and-rtos",
     "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
+    "section": "ISOs and RTOs",
+    "text": "ISOs and RTOs\nISOs and RTOs are independent, non-profit organizations that ensure the reliability of the grid and operate wholesale electricity markets. ISOs and RTOs are regulated by the Federal Energy Regulatory Commission (FERC). ISOs were set according to FERC Order No. 888 and No. 889. Order No. 2000 was issued to encourage the formation of RTOs. ISOs and RTOs are similar in that they both operate wholesale electricity markets and ensure the reliability of the grid. The main difference between ISOs and RTOs is that RTOs are responsible for the operation of the transmission system, while ISOs are not. Figure 3 shows the ISOs and RTOs in the U.S.A. You can find more information about ISOs and RTOs on this page.\n\n\n\nFigure 3: RTOs and ISOs Map cited from FERC Website"
+  },
+  {
+    "objectID": "blog/2023/10/20/index.html",
+    "href": "blog/2023/10/20/index.html",
+    "title": "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation",
+    "section": "",
+    "text": "There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in Table 1. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 Balancing Authorities in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs).\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
+  },
+  {
+    "objectID": "blog/2023/10/20/index.html#the-north-america-electrical-grid-interconnections",
+    "href": "blog/2023/10/20/index.html#the-north-america-electrical-grid-interconnections",
+    "title": "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation",
+    "section": "",
+    "text": "There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in Table 1. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 Balancing Authorities in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs).\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
+  },
+  {
+    "objectID": "blog/2023/10/20/index.html#organization-structure-of-the-us-electrical-grid",
+    "href": "blog/2023/10/20/index.html#organization-structure-of-the-us-electrical-grid",
+    "title": "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation",
+    "section": "Organization Structure of the US Electrical Grid",
+    "text": "Organization Structure of the US Electrical Grid\nThere are currently six regional entities (RE) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council (WECC), the Midcontinent Independent System Operator (MISO), the Electric Reliability Council of Texas (ERCOT), the Northeast Power Coordinating Council (NPCC), the ReliabilityFirst Corporation (RF), and the SERC Reliability Corporation (SERC). The six REs are under the authority of the North American Electric Reliability Corporation (NERC), which is a non-profit international regulatory authority that assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission (FERC). In the U.S.A., The FERC is an independent agency within the Department of Energy (DOE) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines and licensing hydropower projects. Figure 1 shows the organizational structure of the North American electrical grid.\n\n\n\n\n\ngraph TD;\n    FERC--&gt;NERC;\n    NERC--&gt;WECC;\n    NERC--&gt;MISO;\n    NERC--&gt;TexasRE;\n    NERC--&gt;NPCC;\n    NERC--&gt;RF;\n    NERC--&gt;SERC;\n\n\nFigure 1: U.S. Power Grid Organization Structure"
+  },
+  {
+    "objectID": "blog/2023/10/20/index.html#regulated-and-deregulated-electricity-markets",
+    "href": "blog/2023/10/20/index.html#regulated-and-deregulated-electricity-markets",
+    "title": "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation",
+    "section": "Regulated and Deregulated Electricity Markets",
+    "text": "Regulated and Deregulated Electricity Markets\nIn the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and services. In a regulated electricity market, utilities own and operate all aspects of the electric system, including power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. Figure 2 shows the regulated and deregulated electricity markets in the US.\n\n\n\n\n\ngraph TD;\n    Regulated--&gt;|Government|Price;\n    Deregulated--&gt;|Market|Price;\n\n\nFigure 2: Regulated and Deregulated Electricity Markets in the US\n\n\n\n\nThere are 17 States and the District of Columbia that have deregulated electricity markets."
+  },
+  {
+    "objectID": "blog/2023/10/20/index.html#isos-and-rtos",
+    "href": "blog/2023/10/20/index.html#isos-and-rtos",
+    "title": "My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation",
     "section": "ISOs and RTOs",
     "text": "ISOs and RTOs\nISOs and RTOs are independent, non-profit organizations that ensure the reliability of the grid and operate wholesale electricity markets. ISOs and RTOs are regulated by the Federal Energy Regulatory Commission (FERC). ISOs were set according to FERC Order No. 888 and No. 889. Order No. 2000 was issued to encourage the formation of RTOs. ISOs and RTOs are similar in that they both operate wholesale electricity markets and ensure the reliability of the grid. The main difference between ISOs and RTOs is that RTOs are responsible for the operation of the transmission system, while ISOs are not. Figure 3 shows the ISOs and RTOs in the U.S.A. You can find more information about ISOs and RTOs on this page.\n\n\n\nFigure 3: RTOs and ISOs Map cited from FERC Website"
   },
@@ -67,14 +102,14 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Power System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Power System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html#section",
     "href": "blog.html#section",
     "title": "Blog",
     "section": "",
-    "text": "Power System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Power System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -117,5 +152,12 @@
     "title": "Analysis of D-Q Small-Signal Impedance of Grid-Tied Inverters",
     "section": "",
     "text": "Abstract:\nThis paper analyzes the small-signal impedance of three-phase grid-tied inverters with feedback control and phase-locked loop (PLL) in the synchronous reference (d-q) frame. The result unveils an interesting and important feature of three-phase grid-tied inverters - namely, that its q-q channel impedance behaves as a negative incremental resistor. Moreover, this paper shows that this behavior is a consequence of grid synchronization, where the bandwidth of the PLL determines the frequency range of the resistor behavior, and the power rating of the inverter determines the magnitude of the resistor. Advanced PLL, current, and power control strategies do not change this feature. An example shows that under weak grid conditions, a change of the PLL bandwidth could lead the inverter system to unstable conditions as a result of this behavior. Harmonic resonance and instability issues can be analyzed using the proposed impedance model. Simulation and experimental measurements verify the analysis.\n\n\n\nFig.1 Zqq_GTI\n\n\n\n\n\n\nCitationBibTeX citation:@article{wen2015,\n  author = {Wen, Bo},\n  title = {Analysis of {D-Q} {Small-Signal} {Impedance} of {Grid-Tied}\n    {Inverters}},\n  journal = {IEEE Transactions on Power Electronics},\n  date = {2015-01-30},\n  url = {https://ieeexplore.ieee.org/abstract/document/7027822},\n  doi = {10.1109/TPEL.2015.2398192},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nWen, Bo. 2015. “Analysis of D-Q Small-Signal Impedance of\nGrid-Tied Inverters.” IEEE Transactions on Power\nElectronics, January. https://doi.org/10.1109/TPEL.2015.2398192."
+  },
+  {
+    "objectID": "blog/2023/09/30/index.html#modeling-and-simulation-of-power-system",
+    "href": "blog/2023/09/30/index.html#modeling-and-simulation-of-power-system",
+    "title": "My Notes on North America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs",
+    "section": "",
+    "text": "After major disturbance\n\n\n\n\nTable 1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)\n\n\nName\nGeneration Capacity (GW)\nCovers\nRank\n\n\n\n\nNorthern Chinese State Grid\n1,700\nNorthern China\n#1\n\n\nContinental Europe\n859\n24 European countries\n#2\n\n\nEastern Interconnection\n610\nEastern US\n#3\n\n\nWestern Interconnection\n265\nWestern US\n#7\n\n\nTexas Interconnection\n140\nTexas\n#13\n\n\nQuebec Interconnection\n42\nQuebec\n#15"
   }
 ]
