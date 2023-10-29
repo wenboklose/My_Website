@@ -8,9 +8,9 @@
 
 <meta name="author" content="Bo Wen">
 <meta name="dcterms.date" content="2023-10-20">
-<meta name="description" content="This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
+<meta name="description" content="NERC MOD Standards, modeling procedures from ISOs and industries.">
 
-<title>Bo Wen’s Website - My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation</title>
+<title>Bo Wen’s Website - My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,18 +64,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../../../styles.css">
-<meta property="og:title" content="Bo Wen’s Website - My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation">
-<meta property="og:description" content="This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
+<meta property="og:title" content="Bo Wen’s Website - My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation">
+<meta property="og:description" content="NERC MOD Standards, modeling procedures from ISOs and industries.">
 <meta property="og:image" content="img/Grid Code 2.png">
 <meta property="og:site-name" content="Bo Wen's Website">
-<meta name="twitter:title" content="Bo Wen’s Website - My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation">
-<meta name="twitter:description" content="This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.">
+<meta name="twitter:title" content="Bo Wen’s Website - My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation">
+<meta name="twitter:description" content="NERC MOD Standards, modeling procedures from ISOs and industries.">
 <meta name="twitter:image" content="img/Grid Code 2.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -141,10 +138,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-north-america-electrical-grid-interconnections" id="toc-the-north-america-electrical-grid-interconnections" class="nav-link active" data-scroll-target="#the-north-america-electrical-grid-interconnections">The North America Electrical Grid Interconnections</a></li>
-  <li><a href="#organization-structure-of-the-us-electrical-grid" id="toc-organization-structure-of-the-us-electrical-grid" class="nav-link" data-scroll-target="#organization-structure-of-the-us-electrical-grid">Organization Structure of the US Electrical Grid</a></li>
-  <li><a href="#regulated-and-deregulated-electricity-markets" id="toc-regulated-and-deregulated-electricity-markets" class="nav-link" data-scroll-target="#regulated-and-deregulated-electricity-markets">Regulated and Deregulated Electricity Markets</a></li>
-  <li><a href="#isos-and-rtos" id="toc-isos-and-rtos" class="nav-link" data-scroll-target="#isos-and-rtos">ISOs and RTOs</a></li>
+  <li><a href="#nerc-reliability-standards-on-modeling-and-simulations" id="toc-nerc-reliability-standards-on-modeling-and-simulations" class="nav-link active" data-scroll-target="#nerc-reliability-standards-on-modeling-and-simulations">NERC Reliability Standards on Modeling and Simulations</a></li>
+  <li><a href="#psse-vs.-pscad" id="toc-psse-vs.-pscad" class="nav-link" data-scroll-target="#psse-vs.-pscad">PSS®E vs.&nbsp;PSCAD</a></li>
   </ul>
 </nav>
     </div>
@@ -153,20 +148,22 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Notes on Grid Code, IBR Simulation, Software, Model Verification, and Validation</h1>
+<h1 class="title">My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Power System</div>
-    <div class="quarto-category">Power Grid</div>
-    <div class="quarto-category">NERC</div>
-    <div class="quarto-category">WECC</div>
-    <div class="quarto-category">ERCOT</div>
-    <div class="quarto-category">CAISO</div>
+    <div class="quarto-category">MOD</div>
+    <div class="quarto-category">Model</div>
+    <div class="quarto-category">PSS/E</div>
+    <div class="quarto-category">PSCAD</div>
+    <div class="quarto-category">Electromagnetic</div>
+    <div class="quarto-category">Positive Sequence</div>
+    <div class="quarto-category">Inverter</div>
+    <div class="quarto-category">Electranix</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.
+    NERC MOD Standards, modeling procedures from ISOs and industries.
   </div>
 </div>
 
@@ -193,118 +190,83 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="the-north-america-electrical-grid-interconnections" class="level2">
-<h2 class="anchored" data-anchor-id="the-north-america-electrical-grid-interconnections">The North America Electrical Grid Interconnections</h2>
-<p>There are three synchronous grid interconnections in the U.S.A. if Alaska and Hawaii are not counted. The Western Interconnection (WI), the Eastern Interconnection (EI), and the Texas Interconnection (TI). The Quebec Interconnection is, of course, in Canada, covering territory where WI and EI do not cover. From the generation capacity point of view, the EI is the largest, 3rd largest globally, followed by the WI, 7th largest globally, and the TI, 13th largest globally as shown in <a href="#tbl-powergrids">Table&nbsp;1</a>. Interconnections are grouped from balancing authority areas, which are connected by metered high-voltage tie lines. There are over 60 <a href="https://www.energy.gov/sites/default/files/2023-08/Balancing%20Authority%20Backgrounder_2022-Formatted_041723_508.pdf">Balancing Authorities</a> in the U.S.A. and Canada. They are typically either utilities, power marketing administrations, or a group of utilities that have formed regional transmission organizations (RTOs) and independent system operators (ISOs).</p>
+<section id="nerc-reliability-standards-on-modeling-and-simulations" class="level2">
+<h2 class="anchored" data-anchor-id="nerc-reliability-standards-on-modeling-and-simulations">NERC Reliability Standards on Modeling and Simulations</h2>
+<p>Regarding power system modeling and simulation, the North American Electric Reliability Corporation (<a href="https://www.nerc.com/Pages/default.aspx">NERC</a>) created the <a href="https://www.nerc.com/pa/Stand/Pages/ReliabilityStandards.aspx">MOD</a> (Modeling, Data, and Analysis) standard series to ensure the reliability and stability of the bulk power system (<a href="https://www.wecc.org/epubs/StateoftheInterconnection/Pages/The-Bulk-Power-System.aspx">BPS</a>) in North America. The MOD standards provide guidelines for developing and validating models of the power system. Accurate models are essential for understanding how the system will behave under various conditions and for identifying potential problems before they occur. A good introduction to MOD standards on Inverter-Based Resources (IBR) can be found on <a href="https://www.powereng.com/library/an-introduction-to-completing-nerc-mod-studies-for">this page</a>. MOD standards ask for models in <a href="https://www.siemens.com/global/en/products/energy/grid-software/planning/pss-software/pss-e.html">PSS®E</a> or <a href="https://www.gevernova.com/consulting/software/pslf">PSLF</a>, which are for positive sequence Phasor-based analysis. Currently, electromagnetic transient program (<a href="https://en.wikipedia.org/wiki/EMTP">EMPT</a>) modeling is not required in NERC MOD standards. However, NERC published this <a href="https://www.nerc.com/comm/RSTC_Reliability_Guidelines/Reliability_Guideline-EMT_Modeling_and_Simulations.pdf">white paper</a> in March 2023 points out that “<strong>conventional fundamental frequency, positive-sequence dynamic simulation tools used Transmission Planners and Planning Coordinators for many years are inadequate for effectively identifying reliability risks of inverter-based resources in some ways. Electromagnetic transient simulations are necessary to adequately identify and mitigate Bulk Power System reliability risks moving forward.</strong>”</p>
+</section>
+<section id="psse-vs.-pscad" class="level2">
+<h2 class="anchored" data-anchor-id="psse-vs.-pscad">PSS®E vs.&nbsp;PSCAD</h2>
+<p>PSS®E and PSCAD represent two kinds of power system simulation software. The former is for positive-sequence simulation operating in the Root Mean square (RMS) domain, and the latter is for Electromagnetic Transient (EMT) simulation. As shown in <a href="#tbl-powersimsw">Table&nbsp;1</a> there are popular commercial packages for the aforementioned two kinds of simulations.</p>
 <div class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
-<div id="tbl-powergrids" class="anchored">
+<div id="tbl-powersimsw" class="anchored">
 <table class="table table-sm table-striped small">
-<caption>Table&nbsp;1: Global Grids by Generation Capacity (https://en.wikipedia.org/wiki/Wide_area_synchronous_grid)</caption>
+<caption>Table&nbsp;1: Power System Simulation Softwares</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name</th>
-<th style="text-align: left;">Generation Capacity (GW)</th>
-<th style="text-align: left;">Covers</th>
-<th style="text-align: left;">Rank</th>
+<th style="text-align: left;">Positive-sequence Dynamic Simulation</th>
+<th style="text-align: left;">Electromagnetic Transient Simulation</th>
+<th style="text-align: left;">Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Northern Chinese State Grid</td>
-<td style="text-align: left;">1,700</td>
-<td style="text-align: left;">Northern China</td>
-<td style="text-align: left;">#1</td>
+<td style="text-align: left;">PSS®E</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">Siemens</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Continental Europe</td>
-<td style="text-align: left;">859</td>
-<td style="text-align: left;">24 European countries</td>
-<td style="text-align: left;">#2</td>
+<td style="text-align: left;">PSLF</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">GE</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Eastern Interconnection</td>
-<td style="text-align: left;">610</td>
-<td style="text-align: left;">Eastern US</td>
-<td style="text-align: left;">#3</td>
+<td style="text-align: left;">PowerFactory</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">DIgSILENT</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Western Interconnection</td>
-<td style="text-align: left;">265</td>
-<td style="text-align: left;">Western US</td>
-<td style="text-align: left;">#7</td>
+<td style="text-align: left;">ETAP</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">Schneider</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Texas Interconnection</td>
-<td style="text-align: left;">140</td>
-<td style="text-align: left;">Texas</td>
-<td style="text-align: left;">#13</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Quebec Interconnection</td>
-<td style="text-align: left;">42</td>
-<td style="text-align: left;">Quebec</td>
-<td style="text-align: left;">#15</td>
+<td style="text-align: left;">PSCAD</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✓</td>
+<td style="text-align: left;">Manitoba Hydro International Ltd.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-</section>
-<section id="organization-structure-of-the-us-electrical-grid" class="level2">
-<h2 class="anchored" data-anchor-id="organization-structure-of-the-us-electrical-grid">Organization Structure of the US Electrical Grid</h2>
-<p>There are currently six regional entities (<a href="https://en.wikipedia.org/wiki/Regional_entity">RE</a>) in the North American transmission system enforcing reliability standards. The Western Electricity Coordinating Council (<a href="https://www.wecc.org/Pages/home.aspx">WECC</a>), the Midcontinent Independent System Operator (<a href="https://www.mro.net/">MISO</a>), the Electric Reliability Council of Texas (<a href="https://www.ercot.com/">ERCOT</a>), the Northeast Power Coordinating Council (<a href="https://www.npcc.org/">NPCC</a>), the ReliabilityFirst Corporation (<a href="https://rfirst.org/">RF</a>), and the SERC Reliability Corporation (<a href="https://www.serc1.org/">SERC</a>). The six REs are under the authority of the North American Electric Reliability Corporation (<a href="https://www.nerc.com/Pages/default.aspx">NERC</a>), which is a non-profit international regulatory authority that assures the reliability of the bulk power system in North America. NERC is certified by the Federal Energy Regulatory Commission (<a href="https://www.ferc.gov/">FERC</a>). In the U.S.A., The FERC is an independent agency within the Department of Energy (<a href="https://www.energy.gov/">DOE</a>) that regulates the interstate transmission of electricity, natural gas, and oil. FERC also reviews proposals to build liquefied natural gas (LNG) terminals and interstate natural gas pipelines and licensing hydropower projects. <a href="#fig-mermaid">Figure&nbsp;1</a> shows the organizational structure of the North American electrical grid.</p>
-<div class="cell" data-fig-width="6.5">
-<div class="cell-output-display">
-<div id="fig-mermaid" class="quarto-figure quarto-figure-center anchored">
+<p><a href="#fig-PSSimulationMarket">Figure&nbsp;1</a> is from <a href="https://new.abb.com/power-electronics/excitation-and-synchronization/grid-code-compliance">ABB Grid Code Compliance</a> which shows the market leader in different regions around the world. There are also, a lot of open source simulation packages out there.</p>
+<div id="fig-PSSimulationMarket" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-mermaid">graph TD;
-    FERC--&gt;NERC;
-    NERC--&gt;WECC;
-    NERC--&gt;MISO;
-    NERC--&gt;TexasRE;
-    NERC--&gt;NPCC;
-    NERC--&gt;RF;
-    NERC--&gt;SERC;
-</pre>
-</div>
-<figcaption class="figure-caption">Figure&nbsp;1: U.S. Power Grid Organization Structure</figcaption>
+<p><img src="img/PowerSystemSimulationSoftware.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Power system simulation software market</figcaption>
 </figure>
 </div>
-</div>
-</div>
-</section>
-<section id="regulated-and-deregulated-electricity-markets" class="level2">
-<h2 class="anchored" data-anchor-id="regulated-and-deregulated-electricity-markets">Regulated and Deregulated Electricity Markets</h2>
-<p>In the US, there are two types of electricity markets, regulated and deregulated. In a regulated electricity market in the US, state public utility commissions (PUCs) set the electricity rates and oversee utility rates and services. In a regulated electricity market, utilities own and operate all aspects of the electric system, including power generation, transmission and distribution systems, and customer meters. In deregulated markets, the price of electricity is determined by the market. <a href="#fig-regulated">Figure&nbsp;2</a> shows the regulated and deregulated electricity markets in the US.</p>
-<div class="cell" data-fig-width="6.5">
-<div class="cell-output-display">
-<div id="fig-regulated" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-regulated">graph TD;
-    Regulated--&gt;|Government|Price;
-    Deregulated--&gt;|Market|Price;
-</pre>
-</div>
-<figcaption class="figure-caption">Figure&nbsp;2: Regulated and Deregulated Electricity Markets in the US</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>There are 17 States and the District of Columbia that have <a href="https://www.electricchoice.com/map-deregulated-energy-markets/">deregulated electricity markets</a>.</p>
-</section>
-<section id="isos-and-rtos" class="level2">
-<h2 class="anchored" data-anchor-id="isos-and-rtos">ISOs and RTOs</h2>
-<p>ISOs and RTOs are independent, non-profit organizations that ensure the reliability of the grid and operate wholesale electricity markets. ISOs and RTOs are regulated by the Federal Energy Regulatory Commission (FERC). ISOs were set according to FERC Order No.&nbsp;888 and No.&nbsp;889. Order No.&nbsp;2000 was issued to encourage the formation of RTOs. ISOs and RTOs are similar in that they both operate wholesale electricity markets and ensure the reliability of the grid. The main difference between ISOs and RTOs is that RTOs are responsible for the operation of the transmission system, while ISOs are not. <a href="#fig-iso-rto">Figure&nbsp;3</a> shows the ISOs and RTOs in the U.S.A. You can find more information about ISOs and RTOs on this <a href="https://www.ferc.gov/electric-power-markets">page</a>.</p>
-<div id="fig-iso-rto" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="img/RTOsISOsUSA.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: RTOs and ISOs Map cited from FERC Website</figcaption>
-</figure>
-</div>
+<ul>
+<li>Inverter EMT Stuidies The NERC <a href="https://www.nerc.com/comm/RSTC_Reliability_Guidelines/Reliability_Guideline-EMT_Modeling_and_Simulations.pdf">white paper</a> emphasizes that “<strong>the need for EMT studies to assess <a href="https://www.wecc.org/epubs/StateoftheInterconnection/Pages/The-Bulk-Power-System.aspx">BPS</a> reliability is expected to grow exponentially in the coming years based on planned projects in the interconnection queues. Industry will need to act quickly to develop the skills, processes, tools, infrastructure, and capabilities to perform these studies effectively and efficiently.</strong>”</li>
+</ul>
+<p>Projects in the queue are mainly solar and Battery Energy Storage Systems. (<a href="https://electrification.us.abb.com/battery-energy-storage-systems-bess-basics">BESS</a>) Here is a list of studies that need EMT simulation:</p>
+<ul>
+<li>Inverter weak grid integration</li>
+<li>Sub-synchronous control interaction</li>
+<li>Controls interactions between inverters</li>
+<li>Inverter ride-through performance evaluation</li>
+<li>Inverter short-circuit current analysis</li>
+<li>Power quality studies</li>
+<li>Black start studies</li>
+<li>IEEE 2800-2022 performance compliance</li>
+</ul>
 
 
 </section>
