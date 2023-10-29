@@ -58,7 +58,7 @@ Markdown(tabulate(
 
 ![Power system simulation software market](img/PowerSystemSimulationSoftware.png){#fig-PSSimulationMarket width=6.5in}
 
-* Inverter EMT Stuidies
+## Inverter EMT Stuidies
 The NERC [white paper](https://www.nerc.com/comm/RSTC_Reliability_Guidelines/Reliability_Guideline-EMT_Modeling_and_Simulations.pdf) emphasizes that "__the need for EMT studies to assess [BPS](https://www.wecc.org/epubs/StateoftheInterconnection/Pages/The-Bulk-Power-System.aspx) reliability is expected to grow exponentially in the coming years based on planned projects in the interconnection queues. Industry will need to act quickly to develop the skills, processes, tools, infrastructure, and capabilities to perform these studies effectively and efficiently.__"
 
 Projects in the queue are mainly solar and Battery Energy Storage Systems. ([BESS](https://electrification.us.abb.com/battery-energy-storage-systems-bess-basics)) Here is a list of studies that need EMT simulation:
