@@ -1,5 +1,5 @@
 ---
-title: "My Notes on North America Power Grid -- Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs"
+title: "North America Power Grid -- Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs"
 author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en

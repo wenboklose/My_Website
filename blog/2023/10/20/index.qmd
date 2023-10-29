@@ -1,5 +1,5 @@
 ---
-title: "My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation"
+title: "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation"
 author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
