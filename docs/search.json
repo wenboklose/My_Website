@@ -65,28 +65,28 @@
   {
     "objectID": "blog/2023/10/20/index.html",
     "href": "blog/2023/10/20/index.html",
-    "title": "My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
+    "title": "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
     "section": "",
     "text": "Regarding power system modeling and simulation, the North American Electric Reliability Corporation (NERC) created the MOD (Modeling, Data, and Analysis) standard series to ensure the reliability and stability of the bulk power system (BPS) in North America. The MOD standards provide guidelines for developing and validating models of the power system. Accurate models are essential for understanding how the system will behave under various conditions and for identifying potential problems before they occur. A good introduction to MOD standards on Inverter-Based Resources (IBR) can be found on this page. MOD standards ask for models in PSS®E or PSLF, which are for positive sequence Phasor-based analysis. Currently, electromagnetic transient program (EMPT) modeling is not required in NERC MOD standards. However, NERC published this white paper in March 2023 points out that “conventional fundamental frequency, positive-sequence dynamic simulation tools used Transmission Planners and Planning Coordinators for many years are inadequate for effectively identifying reliability risks of inverter-based resources in some ways. Electromagnetic transient simulations are necessary to adequately identify and mitigate Bulk Power System reliability risks moving forward.”"
   },
   {
     "objectID": "blog/2023/10/20/index.html#nerc-reliability-standards-on-modeling-and-simulations",
     "href": "blog/2023/10/20/index.html#nerc-reliability-standards-on-modeling-and-simulations",
-    "title": "My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
+    "title": "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
     "section": "",
     "text": "Regarding power system modeling and simulation, the North American Electric Reliability Corporation (NERC) created the MOD (Modeling, Data, and Analysis) standard series to ensure the reliability and stability of the bulk power system (BPS) in North America. The MOD standards provide guidelines for developing and validating models of the power system. Accurate models are essential for understanding how the system will behave under various conditions and for identifying potential problems before they occur. A good introduction to MOD standards on Inverter-Based Resources (IBR) can be found on this page. MOD standards ask for models in PSS®E or PSLF, which are for positive sequence Phasor-based analysis. Currently, electromagnetic transient program (EMPT) modeling is not required in NERC MOD standards. However, NERC published this white paper in March 2023 points out that “conventional fundamental frequency, positive-sequence dynamic simulation tools used Transmission Planners and Planning Coordinators for many years are inadequate for effectively identifying reliability risks of inverter-based resources in some ways. Electromagnetic transient simulations are necessary to adequately identify and mitigate Bulk Power System reliability risks moving forward.”"
   },
   {
     "objectID": "blog/2023/10/20/index.html#psse-vs.-pscad",
     "href": "blog/2023/10/20/index.html#psse-vs.-pscad",
-    "title": "My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
+    "title": "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
     "section": "PSS®E vs. PSCAD",
     "text": "PSS®E vs. PSCAD\nPSS®E and PSCAD represent two kinds of power system simulation software. The former is for positive-sequence simulation operating in the Root Mean square (RMS) domain, and the latter is for Electromagnetic Transient (EMT) simulation. As shown in Table 1 there are popular commercial packages for the aforementioned two kinds of simulations.\n\n\n\n\nTable 1: Power System Simulation Softwares\n\n\nName\nPositive-sequence Dynamic Simulation\nElectromagnetic Transient Simulation\nOwner\n\n\n\n\nPSS®E\n✓\n❌\nSiemens\n\n\nPSLF\n✓\n❌\nGE\n\n\nPowerFactory\n✓\n✓\nDIgSILENT\n\n\nETAP\n❌\n✓\nSchneider\n\n\nPSCAD\n❌\n✓\nManitoba Hydro International Ltd.\n\n\n\n\n\n\nFigure 1 is from ABB Grid Code Compliance which shows the market leader in different regions around the world. There are also, a lot of open source simulation packages out there.\n\n\n\nFigure 1: Power system simulation software market"
   },
   {
     "objectID": "blog/2023/10/20/index.html#inverter-emt-stuidies",
     "href": "blog/2023/10/20/index.html#inverter-emt-stuidies",
-    "title": "My Notes on Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
+    "title": "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
     "section": "Inverter EMT Stuidies",
     "text": "Inverter EMT Stuidies\nThe NERC white paper emphasizes that “the need for EMT studies to assess BPS reliability is expected to grow exponentially in the coming years based on planned projects in the interconnection queues. Industry will need to act quickly to develop the skills, processes, tools, infrastructure, and capabilities to perform these studies effectively and efficiently.”\nProjects in the queue are mainly solar and Battery Energy Storage Systems. (BESS) Here is a list of studies that need EMT simulation:\n\nInverter weak grid integration\nSub-synchronous control interaction\nControls interactions between inverters\nInverter ride-through performance evaluation\nInverter short-circuit current analysis\nPower quality studies\nBlack start studies\nIEEE 2800-2022 performance compliance"
   },

@@ -36,7 +36,7 @@ Regarding power system modeling and simulation, the North American Electric Reli
 
 ## PSS®E vs. PSCAD
 
-PSS®E and PSCAD represent two kinds of power system simulation software. The former is for positive-sequence simulation operating in the Root Mean square (RMS) domain, and the latter is for Electromagnetic Transient (EMT) simulation. As shown in @tbl-powersimsw there are popular commercial packages for the aforementioned two kinds of simulations.
+PSS®E and PSCAD represent two kinds of power system simulation software. The former is for [positive-sequence simulation](https://www.nerc.com/comm/RSTC_Reliability_Guidelines/Beyond_Positive_Sequence_Technical_Report.pdf) operating in the Root Mean square (RMS) domain, and the latter is for Electromagnetic Transient ([EMT](https://en.wikipedia.org/wiki/EMTP)) simulation. As shown in @tbl-powersimsw there are popular commercial packages for the aforementioned two kinds of simulations.
 ```{python}
 #| label: tbl-powersimsw
 #| tbl-cap: Power System Simulation Softwares
