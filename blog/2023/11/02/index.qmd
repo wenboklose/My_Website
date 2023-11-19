@@ -4,7 +4,7 @@ author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
 date: 2023-11-02
-description: "Let's talk about these plots out there that are related to grid-following, grid-forming inverters."
+description: "Let's talk about these plots out there that are related to grid-following and grid-forming inverters."
 image: img/FreqScan.png
 twitter-card: 
     image: "img/FreqScan.png"
@@ -41,6 +41,6 @@ Great Britain (GB) National Grid ESO has a minimum specification required for pr
 The National Grid ESO also gives a [GBGF Best Practice Guide, April 2023](https://www.nationalgrideso.com/document/278491/download) in which a comprehensive list of analysis tools for compliance testing is introduced. Along with the NFP-based analysis, the impedance-based analysis and the eigenvalue analysis are also included for the small-signal stability analysis.
 
 
-## Impedance-Based Analysis
+## DQ Impedance-Based Analysis
 
-In the field of impedance-based AC power system small-signal analysis, Purdue University's [Dr. M. Belkhayat](https://docs.lib.purdue.edu/dissertations/AAI9821703/) and [Virginia Tech](https://vtechworks.lib.vt.edu/handle/10919/5534/discover?filtertype_1=advisor&filter_relational_operator_1=contains&filter_1=boroyevich&submit_apply_filter=&query=impedance+analysis) have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite [US9471731B2, Electrical power system stability optimization system](https://patents.google.com/patent/US9471731B2/en)) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work on [grid-tied inverter](https://ieeexplore.ieee.org/abstract/document/7027822) and [data center power system applications](https://ieeexplore.ieee.org/abstract/document/10146469).
+In the field of impedance-based AC power system small-signal analysis, Purdue University's [Dr. M. Belkhayat](https://docs.lib.purdue.edu/dissertations/AAI9821703/) and [Virginia Tech](https://vtechworks.lib.vt.edu/handle/10919/5534/discover?filtertype_1=advisor&filter_relational_operator_1=contains&filter_1=boroyevich&submit_apply_filter=&query=impedance+analysis) have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite [US9471731B2, Electrical power system stability optimization system](https://patents.google.com/patent/US9471731B2/en)) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work has topics on [grid-tied inverter](https://ieeexplore.ieee.org/abstract/document/7027822) and [data center power system applications](https://ieeexplore.ieee.org/abstract/document/10146469).
