@@ -8,7 +8,7 @@
 
 <meta name="author" content="Bo Wen">
 <meta name="dcterms.date" content="2023-11-02">
-<meta name="description" content="Let’s talk about these plots out there that are related to grid-following, grid-forming inverters.">
+<meta name="description" content="Let’s talk about these plots out there that are related to grid-following and grid-forming inverters.">
 
 <title>Bo Wen’s Website - NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter</title>
 <style>
@@ -68,11 +68,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../../../../styles.css">
 <meta property="og:title" content="Bo Wen’s Website - NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter">
-<meta property="og:description" content="Let’s talk about these plots out there that are related to grid-following, grid-forming inverters.">
+<meta property="og:description" content="Let’s talk about these plots out there that are related to grid-following and grid-forming inverters.">
 <meta property="og:image" content="img/FreqScan.png">
 <meta property="og:site-name" content="Bo Wen's Website">
 <meta name="twitter:title" content="Bo Wen’s Website - NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter">
-<meta name="twitter:description" content="Let’s talk about these plots out there that are related to grid-following, grid-forming inverters.">
+<meta name="twitter:description" content="Let’s talk about these plots out there that are related to grid-following and grid-forming inverters.">
 <meta name="twitter:image" content="img/FreqScan.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#ercot-and-aemo-use-the-positive-sequence-frequency-scan" id="toc-ercot-and-aemo-use-the-positive-sequence-frequency-scan" class="nav-link active" data-scroll-target="#ercot-and-aemo-use-the-positive-sequence-frequency-scan">ERCOT and AEMO use the Positive Sequence Frequency Scan</a></li>
   <li><a href="#gb-national-grids-nfp-plot" id="toc-gb-national-grids-nfp-plot" class="nav-link" data-scroll-target="#gb-national-grids-nfp-plot">GB National Grid’s NFP Plot</a></li>
-  <li><a href="#impedance-based-analysis" id="toc-impedance-based-analysis" class="nav-link" data-scroll-target="#impedance-based-analysis">Impedance-Based Analysis</a></li>
+  <li><a href="#dq-impedance-based-analysis" id="toc-dq-impedance-based-analysis" class="nav-link" data-scroll-target="#dq-impedance-based-analysis">DQ Impedance-Based Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-category">Frequency Scan</div>
     <div class="quarto-category">NFP</div>
     <div class="quarto-category">Impedance</div>
-    <div class="quarto-category">PSCAD</div>
+    <div class="quarto-category">DQ</div>
     <div class="quarto-category">Positive Sequence</div>
     <div class="quarto-category">Inverter</div>
   </div>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Let’s talk about these plots out there that are related to grid-following, grid-forming inverters.
+    Let’s talk about these plots out there that are related to grid-following and grid-forming inverters.
   </div>
 </div>
 
@@ -192,9 +192,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Great Britain (GB) National Grid ESO has a minimum specification required for provision of GB grid forming capability <a href="https://www.nationalgrideso.com/document/220511/download">GBGF Minimum Specification</a> (<a href="https://www.nationalgrideso.com/document/220516/download">GBGF Specification Package</a> has more detailed information) which requires developers to submit a Network Frequency Perturbation (NFP) Plot combined with a Nichols Chart. This approach is reported in the paper titled <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-rpg.2016.0352">“Instantaneous penetration level limits of non-synchronous devices in the British power system”</a> in 2016.</p>
 <p>The National Grid ESO also gives a <a href="https://www.nationalgrideso.com/document/278491/download">GBGF Best Practice Guide, April 2023</a> in which a comprehensive list of analysis tools for compliance testing is introduced. Along with the NFP-based analysis, the impedance-based analysis and the eigenvalue analysis are also included for the small-signal stability analysis.</p>
 </section>
-<section id="impedance-based-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="impedance-based-analysis">Impedance-Based Analysis</h2>
-<p>In the field of impedance-based AC power system small-signal analysis, Purdue University’s <a href="https://docs.lib.purdue.edu/dissertations/AAI9821703/">Dr.&nbsp;M. Belkhayat</a> and <a href="https://vtechworks.lib.vt.edu/handle/10919/5534/discover?filtertype_1=advisor&amp;filter_relational_operator_1=contains&amp;filter_1=boroyevich&amp;submit_apply_filter=&amp;query=impedance+analysis">Virginia Tech</a> have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite <a href="https://patents.google.com/patent/US9471731B2/en">US9471731B2, Electrical power system stability optimization system</a>) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work on <a href="https://ieeexplore.ieee.org/abstract/document/7027822">grid-tied inverter</a> and <a href="https://ieeexplore.ieee.org/abstract/document/10146469">data center power system applications</a>.</p>
+<section id="dq-impedance-based-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="dq-impedance-based-analysis">DQ Impedance-Based Analysis</h2>
+<p>In the field of impedance-based AC power system small-signal analysis, Purdue University’s <a href="https://docs.lib.purdue.edu/dissertations/AAI9821703/">Dr.&nbsp;M. Belkhayat</a> and <a href="https://vtechworks.lib.vt.edu/handle/10919/5534/discover?filtertype_1=advisor&amp;filter_relational_operator_1=contains&amp;filter_1=boroyevich&amp;submit_apply_filter=&amp;query=impedance+analysis">Virginia Tech</a> have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite <a href="https://patents.google.com/patent/US9471731B2/en">US9471731B2, Electrical power system stability optimization system</a>) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work has topics on <a href="https://ieeexplore.ieee.org/abstract/document/7027822">grid-tied inverter</a> and <a href="https://ieeexplore.ieee.org/abstract/document/10146469">data center power system applications</a>.</p>
 
 
 </section>

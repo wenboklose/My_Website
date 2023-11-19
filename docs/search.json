@@ -119,25 +119,25 @@
     "text": "GB National Grid’s NFP Plot\nGreat Britain (GB) National Grid ESO has a minimum specification required for provision of GB grid forming capability GBGF Minimum Specification (GBGF Specification Package has more detailed information) which requires developers to submit a Network Frequency Perturbation (NFP) Plot combined with a Nichols Chart. This approach is reported in the paper titled “Instantaneous penetration level limits of non-synchronous devices in the British power system” in 2016.\nThe National Grid ESO also gives a GBGF Best Practice Guide, April 2023 in which a comprehensive list of analysis tools for compliance testing is introduced. Along with the NFP-based analysis, the impedance-based analysis and the eigenvalue analysis are also included for the small-signal stability analysis."
   },
   {
-    "objectID": "blog/2023/11/02/index.html#impedance-based-analysis",
-    "href": "blog/2023/11/02/index.html#impedance-based-analysis",
+    "objectID": "blog/2023/11/02/index.html#dq-impedance-based-analysis",
+    "href": "blog/2023/11/02/index.html#dq-impedance-based-analysis",
     "title": "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter",
-    "section": "Impedance-Based Analysis",
-    "text": "Impedance-Based Analysis\nIn the field of impedance-based AC power system small-signal analysis, Purdue University’s Dr. M. Belkhayat and Virginia Tech have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite US9471731B2, Electrical power system stability optimization system) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work on grid-tied inverter and data center power system applications."
+    "section": "DQ Impedance-Based Analysis",
+    "text": "DQ Impedance-Based Analysis\nIn the field of impedance-based AC power system small-signal analysis, Purdue University’s Dr. M. Belkhayat and Virginia Tech have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite US9471731B2, Electrical power system stability optimization system) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work has topics on grid-tied inverter and data center power system applications."
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nPSCAD\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following, grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nDQ\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following and grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html#section",
     "href": "blog.html#section",
     "title": "Blog",
     "section": "",
-    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nPSCAD\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following, grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nDQ\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following and grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
