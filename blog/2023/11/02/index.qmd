@@ -14,7 +14,7 @@ categories:
   - Frequency Scan
   - NFP
   - Impedance
-  - PSCAD
+  - DQ
   - Positive Sequence
   - Inverter
 # doi: 10.59350/cwrq4-m7h10
