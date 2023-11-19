@@ -71,3 +71,9 @@ Projects in the queue are mainly solar and Battery Energy Storage Systems. ([BES
 * Power quality studies
 * Black start studies
 * IEEE 2800-2022 performance compliance
+
+## EMTP/PSCAD modeling guideline
+
+ERCOT [Dynamics Working Group](https://www.ercot.com/committees/ros/dwg) Procedure Manual gives a detailed guide on what and how the inverter PSCAD model should be build, tested and validated.
+
+[Electranix](https://www.electranix.com/) also publish PSCAD Requirements which are well accepted by NERC in the North America region.

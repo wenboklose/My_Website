@@ -11,12 +11,16 @@ website:
         text: About
       - href: research.qmd
         text: Research
-      - text: More
-        menu:
-          - href: projects.qmd
-            text: Projects
-          - text: Blog
-            href: blog.qmd
+      - href: blog.qmd
+        text: Blog
+      - href: project.qmd
+        text: Project
+      # - text: More
+      #   menu:
+      #     - href: projects.qmd
+      #       text: Projects
+      #     - text: Blog
+      #       href: blog.qmd
 
 format:
   html:

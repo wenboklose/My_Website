@@ -91,18 +91,53 @@
     "text": "Inverter EMT Stuidies\nThe NERC white paper emphasizes that “the need for EMT studies to assess BPS reliability is expected to grow exponentially in the coming years based on planned projects in the interconnection queues. Industry will need to act quickly to develop the skills, processes, tools, infrastructure, and capabilities to perform these studies effectively and efficiently.”\nProjects in the queue are mainly solar and Battery Energy Storage Systems. (BESS) Here is a list of studies that need EMT simulation:\n\nInverter weak grid integration\nSub-synchronous control interaction\nControls interactions between inverters\nInverter ride-through performance evaluation\nInverter short-circuit current analysis\nPower quality studies\nBlack start studies\nIEEE 2800-2022 performance compliance"
   },
   {
+    "objectID": "blog/2023/10/20/index.html#emtppscad-modeling-guideline",
+    "href": "blog/2023/10/20/index.html#emtppscad-modeling-guideline",
+    "title": "Grid Code, IBR Simulation Software, Modeling, Verification, and Validation",
+    "section": "EMTP/PSCAD modeling guideline",
+    "text": "EMTP/PSCAD modeling guideline\nERCOT Dynamics Working Group Procedure Manual gives a detailed guide on what and how the inverter PSCAD model should be build, tested and validated.\nElectranix also publish PSCAD Requirements which are well accepted by NERC in the North America region."
+  },
+  {
+    "objectID": "blog/2023/11/02/index.html",
+    "href": "blog/2023/11/02/index.html",
+    "title": "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter",
+    "section": "",
+    "text": "In their Dynamic Working Group Procedure Manual Section 3.1.6.3, ERCOT specifies the subsynchronous test: “Perform a frequency scan sweep to measure the subsynchronous impedance as seen looking into the inverter over the range 5 to 55 Hz in 1 Hz increments. This test is generally conducted by adding a small voltage perturbation of variable frequency superimposed on the fundamental (60 Hz) voltage, and measuring the complex impedance as seen looking into the inverter. The results should be provided both as a plot and as a table and should display Resistance and Reactance. plotted over 5 to 55 Hz. Values should be in per-unit on the inverter MVA base. This test should be conducted under the following conditions: Strong system (short circuit ratio = 10), unity power factor, Weak System Lagging (short circuit ratio = 1.5, 0.95 lagging power factor), and Weak System Leading (short circuit ratio = 1.5, 0.95 leading power factor).”\nAEMO, the Australian Energy Market Operator also adopts a similar approach. In their Voluntary Specification for Grid-forming Inverters, May 2023, it is expected that ‘the positive sequence impedance response of a grid-forming inverter should ideally have a phase angle between 90-degrees and +90-degrees (or equivalently have a positive real part, that is, resistance), across a wide range of sub-synchronous frequencies.’"
+  },
+  {
+    "objectID": "blog/2023/11/02/index.html#ercot-and-aemo-use-the-positive-sequence-frequency-scan",
+    "href": "blog/2023/11/02/index.html#ercot-and-aemo-use-the-positive-sequence-frequency-scan",
+    "title": "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter",
+    "section": "",
+    "text": "In their Dynamic Working Group Procedure Manual Section 3.1.6.3, ERCOT specifies the subsynchronous test: “Perform a frequency scan sweep to measure the subsynchronous impedance as seen looking into the inverter over the range 5 to 55 Hz in 1 Hz increments. This test is generally conducted by adding a small voltage perturbation of variable frequency superimposed on the fundamental (60 Hz) voltage, and measuring the complex impedance as seen looking into the inverter. The results should be provided both as a plot and as a table and should display Resistance and Reactance. plotted over 5 to 55 Hz. Values should be in per-unit on the inverter MVA base. This test should be conducted under the following conditions: Strong system (short circuit ratio = 10), unity power factor, Weak System Lagging (short circuit ratio = 1.5, 0.95 lagging power factor), and Weak System Leading (short circuit ratio = 1.5, 0.95 leading power factor).”\nAEMO, the Australian Energy Market Operator also adopts a similar approach. In their Voluntary Specification for Grid-forming Inverters, May 2023, it is expected that ‘the positive sequence impedance response of a grid-forming inverter should ideally have a phase angle between 90-degrees and +90-degrees (or equivalently have a positive real part, that is, resistance), across a wide range of sub-synchronous frequencies.’"
+  },
+  {
+    "objectID": "blog/2023/11/02/index.html#gb-national-grids-nfp-plot",
+    "href": "blog/2023/11/02/index.html#gb-national-grids-nfp-plot",
+    "title": "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter",
+    "section": "GB National Grid’s NFP Plot",
+    "text": "GB National Grid’s NFP Plot\nGreat Britain (GB) National Grid ESO has a minimum specification required for provision of GB grid forming capability GBGF Minimum Specification (GBGF Specification Package has more detailed information) which requires developers to submit a Network Frequency Perturbation (NFP) Plot combined with a Nichols Chart. This approach is reported in the paper titled “Instantaneous penetration level limits of non-synchronous devices in the British power system” in 2016.\nThe National Grid ESO also gives a GBGF Best Practice Guide, April 2023 in which a comprehensive list of analysis tools for compliance testing is introduced. Along with the NFP-based analysis, the impedance-based analysis and the eigenvalue analysis are also included for the small-signal stability analysis."
+  },
+  {
+    "objectID": "blog/2023/11/02/index.html#impedance-based-analysis",
+    "href": "blog/2023/11/02/index.html#impedance-based-analysis",
+    "title": "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter",
+    "section": "Impedance-Based Analysis",
+    "text": "Impedance-Based Analysis\nIn the field of impedance-based AC power system small-signal analysis, Purdue University’s Dr. M. Belkhayat and Virginia Tech have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite US9471731B2, Electrical power system stability optimization system) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work on grid-tied inverter and data center power system applications."
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "MOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nPSCAD\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following, grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html#section",
     "href": "blog.html#section",
     "title": "Blog",
     "section": "",
-    "text": "MOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nPSCAD\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following, grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",

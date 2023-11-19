@@ -1,0 +1,46 @@
+---
+title: "NFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter"
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+date: 2023-11-02
+description: "Let's talk about these plots out there that are related to grid-following, grid-forming inverters."
+image: img/FreqScan.png
+twitter-card: 
+    image: "img/FreqScan.png"
+open-graph: 
+    image: "img/FreqScan.png"
+categories:
+  - Frequency Scan
+  - NFP
+  - Impedance
+  - PSCAD
+  - Positive Sequence
+  - Inverter
+# doi: 10.59350/cwrq4-m7h10
+citation: false
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+## ERCOT and AEMO use the Positive Sequence Frequency Scan
+
+In their [Dynamic Working Group Procedure Manual](https://www.ercot.com/committees/ros/dwg) Section 3.1.6.3, [ERCOT](https://www.ercot.com/) specifies the subsynchronous test: "Perform a frequency scan sweep to measure the subsynchronous impedance as seen looking into the inverter over the range 5 to 55 Hz in 1 Hz increments.  This test is generally conducted by adding a small voltage perturbation of variable frequency superimposed on the fundamental (60 Hz) voltage, and measuring the complex impedance as seen looking into the inverter.  The results should be provided both as a plot and as a table and should display Resistance and Reactance. plotted over 5 to 55 Hz.  Values should be in per-unit on the inverter MVA base.  This test should be conducted under the following conditions:  Strong system (short circuit ratio = 10), unity power factor, Weak System Lagging (short circuit ratio = 1.5, 0.95 lagging power factor), and Weak System Leading (short circuit ratio = 1.5, 0.95 leading power factor)."
+
+[AEMO](https://aemo.com.au/), the Australian Energy Market Operator also adopts a similar approach. In their [Voluntary Specification for Grid-forming Inverters, May 2023](https://aemo.com.au/-/media/files/initiatives/primary-frequency-response/2023/gfm-voluntary-spec.pdf), it is expected that 'the positive sequence impedance response of a grid-forming inverter should ideally have a phase angle between 90-degrees and +90-degrees (or equivalently have a positive real part, that is, resistance), across a wide range of sub-synchronous frequencies.'
+
+## GB National Grid's NFP Plot
+
+Great Britain (GB) National Grid ESO has a minimum specification required for provision of GB grid forming capability [GBGF Minimum Specification](https://www.nationalgrideso.com/document/220511/download) ([GBGF Specification Package](https://www.nationalgrideso.com/document/220516/download) has more detailed information) which requires developers to submit a Network Frequency Perturbation (NFP) Plot combined with a Nichols Chart. This approach is reported in the paper titled ["Instantaneous penetration level limits of non-synchronous devices in the British power system"](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-rpg.2016.0352) in 2016.
+
+The National Grid ESO also gives a [GBGF Best Practice Guide, April 2023](https://www.nationalgrideso.com/document/278491/download) in which a comprehensive list of analysis tools for compliance testing is introduced. Along with the NFP-based analysis, the impedance-based analysis and the eigenvalue analysis are also included for the small-signal stability analysis.
+
+
+## Impedance-Based Analysis
+
+In the field of impedance-based AC power system small-signal analysis, Purdue University's [Dr. M. Belkhayat](https://docs.lib.purdue.edu/dissertations/AAI9821703/) and [Virginia Tech](https://vtechworks.lib.vt.edu/handle/10919/5534/discover?filtertype_1=advisor&filter_relational_operator_1=contains&filter_1=boroyevich&submit_apply_filter=&query=impedance+analysis) have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite [US9471731B2, Electrical power system stability optimization system](https://patents.google.com/patent/US9471731B2/en)) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work on [grid-tied inverter](https://ieeexplore.ieee.org/abstract/document/7027822) and [data center power system applications](https://ieeexplore.ieee.org/abstract/document/10146469).
