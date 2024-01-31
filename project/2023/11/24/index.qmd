@@ -1,0 +1,32 @@
+---
+title: "Impedance Modeling of Grid-following and Grid-forming Inverters"
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+date: 2023-09-30
+description: "This blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO."
+image: img/DalleGridFormingFollowing .png
+twitter-card: 
+    image: "img/DalleGridFormingFollowing .png"
+open-graph: 
+    image: "img/DalleGridFormingFollowing .png"
+categories:
+  - Power System
+  - Power Grid
+  - Grid Forming
+  - Grid Following
+  - PLL
+  - Inertia
+# doi: 10.59350/cwrq4-m7h10
+citation: false
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+## The North America Electrical Grid Interconnections

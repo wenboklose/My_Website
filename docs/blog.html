@@ -92,6 +92,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2024 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2024'] = new List('listing-posts_2024', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -133,10 +161,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./project.qmd" rel="" target="">
- <span class="menu-text">Project</span></a>
-  </li>  
 </ul>
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -154,10 +178,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Year</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2023</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="CAISO">CAISO <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DQ">DQ <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ERCOT">ERCOT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Electranix">Electranix <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Electromagnetic">Electromagnetic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Frequency Scan">Frequency Scan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Impedance">Impedance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Inverter">Inverter <span class="quarto-category-count">(2)</span></div><div class="category" data-category="MOD">MOD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Model">Model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NERC">NERC <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NFP">NFP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PSCAD">PSCAD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PSS/E">PSS/E <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Positive Sequence">Positive Sequence <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Power Grid">Power Grid <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Power System">Power System <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WECC">WECC <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="CAISO">CAISO <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DQ">DQ <span class="quarto-category-count">(1)</span></div><div class="category" data-category="EMT">EMT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ERCOT">ERCOT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Electranix">Electranix <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Electromagnetic">Electromagnetic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Frequency Scan">Frequency Scan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Impedance">Impedance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Inverter">Inverter <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Level 2">Level 2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MOD">MOD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MOSFET">MOSFET <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Model">Model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Model Level">Model Level <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NERC">NERC <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NFP">NFP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PSCAD">PSCAD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PSS/E">PSS/E <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Phasor">Phasor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Positive Sequence">Positive Sequence <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Power Grid">Power Grid <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Power System">Power System <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WECC">WECC <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -189,10 +214,73 @@ ul.task-list li input[type="checkbox"] {
 }
 ``` -->
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2023</h2>
+<h2 class="anchored" data-anchor-id="section">2024</h2>
+<div id="listing-posts_2024" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Model Level,MOSFET,Inverter,Level 2,Positive Sequence,EMT,Phasor" data-listing-date-sort="1706418000000" data-listing-file-modified-sort="1706670577473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./blog/2024/01/28/index.html"> <img src="./blog/2024/01/28/img/MOSFETModelLevels.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/2024/01/28/index.html">
+<h3 class="no-anchor listing-title">
+Model Levels – MOSFET and Inverters
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Model Level'); return false;">
+Model Level
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('MOSFET'); return false;">
+MOSFET
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Inverter'); return false;">
+Inverter
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Level 2'); return false;">
+Level 2
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Positive Sequence'); return false;">
+Positive Sequence
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('EMT'); return false;">
+EMT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Phasor'); return false;">
+Phasor
+</div>
+</div>
+<a href="./blog/2024/01/28/index.html">
+<div class="listing-description">
+<p>All models are wrong, but some are useful – George Box</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/2024/01/28/index.html">
+<div class="listing-date">
+2024-01-28
+</div>
+<div class="listing-author">
+Bo Wen
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2023</h2>
 <div id="listing-posts_2023" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Frequency Scan,NFP,Impedance,DQ,Positive Sequence,Inverter" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1700407302558" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="Frequency Scan,NFP,Impedance,DQ,Positive Sequence,Inverter" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1700409632266" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./blog/2023/11/02/index.html"> <img src="./blog/2023/11/02/img/FreqScan.png" class="thumbnail-image"> </a></p>
 </div>

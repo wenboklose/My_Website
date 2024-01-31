@@ -126,18 +126,46 @@
     "text": "DQ Impedance-Based Analysis\nIn the field of impedance-based AC power system small-signal analysis, Purdue University’s Dr. M. Belkhayat and Virginia Tech have been ahead of everyone else for so long. Impedance modeling, measurement instrument and software suite US9471731B2, Electrical power system stability optimization system) were developed. However, most of their research served aircraft and ship applications before 2012. More recent work has topics on grid-tied inverter and data center power system applications."
   },
   {
+    "objectID": "blog/2024/01/28/index.html",
+    "href": "blog/2024/01/28/index.html",
+    "title": "Model Levels – MOSFET and Inverters",
+    "section": "",
+    "text": "“Model level” is a concept that is very familiar to power electronics engineers when talking about power MOSFETs. In SIMPLIS which is a well-known power supply simulation package. It defines Level 0, 1, 2, and 3 models for power MOSFETs.\n\nLevel 0 models a switch with on/off resistance values, a body diode, gate resistance, and gate-to-source capacitance. The Level 0 model can be used in transient and AC analysis simulations.\nLevel 1 model adds an output capacitor parallel to the switch. Though it is a lumped linear capacitor, it enables the simulation of soft-switching circuits.\nLevel 2 model models a switch with forward transconductance gain, a body diode, and gate-to-source capacitance, plus nonlinear Gate-Drain, Drain-Source, and Gate-Source capacitors. It enables the simulation of switching losses, voltage and current stresses."
+  },
+  {
+    "objectID": "blog/2024/01/28/index.html#mosfet-model-levels",
+    "href": "blog/2024/01/28/index.html#mosfet-model-levels",
+    "title": "Model Levels – MOSFET and Inverters",
+    "section": "",
+    "text": "“Model level” is a concept that is very familiar to power electronics engineers when talking about power MOSFETs. In SIMPLIS which is a well-known power supply simulation package. It defines Level 0, 1, 2, and 3 models for power MOSFETs.\n\nLevel 0 models a switch with on/off resistance values, a body diode, gate resistance, and gate-to-source capacitance. The Level 0 model can be used in transient and AC analysis simulations.\nLevel 1 model adds an output capacitor parallel to the switch. Though it is a lumped linear capacitor, it enables the simulation of soft-switching circuits.\nLevel 2 model models a switch with forward transconductance gain, a body diode, and gate-to-source capacitance, plus nonlinear Gate-Drain, Drain-Source, and Gate-Source capacitors. It enables the simulation of switching losses, voltage and current stresses."
+  },
+  {
+    "objectID": "blog/2024/01/28/index.html#inverter-model-levels",
+    "href": "blog/2024/01/28/index.html#inverter-model-levels",
+    "title": "Model Levels – MOSFET and Inverters",
+    "section": "Inverter Model Levels",
+    "text": "Inverter Model Levels\nModern power system design and analysis uses power flow or load flow simulation, dynamic simulation, and EMT simulation. For an inverter used in a PV or BESS system, different models are used for different simulations. Can we define Level 0, 1, and 2 models for an inverter in power system simulations?\n\nInverter Level 0 model – a model for power flow simulation. The inverter is set as a PQ node (real power P and the reactive power Q are fixed in magnitude) since it is controlled at its MPPT point with a constant power factor.\nInverter Level 1 model – a positive sequence phasor model or RMS model for transmission system dynamic simulation. This model describes the system dynamic only at fundamental frequency positive sequence. This kind of model cannot represent sub-line cycle information, so the sub-synchronous oscillation instability problem cannot be studied using such a model.\nInverter Level 2 model – an EMT (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, Matlab/Simulink are EMT model simulations.\n\n\n\nTable 1: Analogue between MOSFET Model Levels and Inverter Model Levels\n\n\n\n\n\n\n\n\nPower MOSFET in SIMPLIS\nInverter\n\n\n\n\nLevel 0\n\n\n\n\nLevel 1\n\n\n\n\nLevel 2"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nDQ\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following and grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Model Level\n\n\nMOSFET\n\n\nInverter\n\n\nLevel 2\n\n\nPositive Sequence\n\n\nEMT\n\n\nPhasor\n\n\n\n\nAll models are wrong, but some are useful – George Box\n\n\n\n\n\n\n2024-01-28\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html#section",
     "href": "blog.html#section",
     "title": "Blog",
     "section": "",
-    "text": "Frequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nDQ\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following and grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+    "text": "Model Level\n\n\nMOSFET\n\n\nInverter\n\n\nLevel 2\n\n\nPositive Sequence\n\n\nEMT\n\n\nPhasor\n\n\n\n\nAll models are wrong, but some are useful – George Box\n\n\n\n\n\n\n2024-01-28\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html#section-1",
+    "href": "blog.html#section-1",
+    "title": "Blog",
+    "section": "2023",
+    "text": "2023\n\n\n\n\n  \n\n\n\n\nNFP Plot, Frequency Scan Plot, and Impedance Bode Plot of an Inverter\n\n\n\n\n\n\n\nFrequency Scan\n\n\nNFP\n\n\nImpedance\n\n\nDQ\n\n\nPositive Sequence\n\n\nInverter\n\n\n\n\nLet’s talk about these plots out there that are related to grid-following and grid-forming inverters.\n\n\n\n\n\n\n2023-11-02\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\nGrid Code, IBR Simulation Software, Modeling, Verification, and Validation\n\n\n\n\n\n\n\nMOD\n\n\nModel\n\n\nPSS/E\n\n\nPSCAD\n\n\nElectromagnetic\n\n\nPositive Sequence\n\n\nInverter\n\n\nElectranix\n\n\n\n\nNERC MOD Standards, modeling procedures from ISOs and industries.\n\n\n\n\n\n\n2023-10-20\n\n\nBo Wen\n\n\n\n\n\n\n  \n\n\n\n\nNorth America Power Grid – Organization Structure, Regulated and Deregulated Electricity Markets, and RTOs and ISOs\n\n\n\n\n\n\n\nPower System\n\n\nPower Grid\n\n\nNERC\n\n\nWECC\n\n\nERCOT\n\n\nCAISO\n\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\n\n\n\n2023-09-30\n\n\nBo Wen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -145,6 +173,20 @@
     "title": "Bo Wen – Power Electronics Engineer",
     "section": "",
     "text": "Welcome to my personal website!\nAs a researcher, engineer, reader, and coffee lover, my area of expertise centers around Power Electronics technology, with a specific focus on expediting the transition to low-carbon technologies, such as renewable energy, microgrid, electric vehicles, and data center power systems."
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Project",
+    "section": "",
+    "text": "Power System\n\n\nPower Grid\n\n\nGrid Forming\n\n\nGrid Following\n\n\nPLL\n\n\nInertia\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\nBo Wen\n\n\n2023-09-30\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "project.html#section",
+    "href": "project.html#section",
+    "title": "Project",
+    "section": "",
+    "text": "Power System\n\n\nPower Grid\n\n\nGrid Forming\n\n\nGrid Following\n\n\nPLL\n\n\nInertia\n\n\n\nThis blog gives brief information on FERC, NERC, REs, RTOs, ISOs, WECC, ERCOT, and CAISO.\n\n\n\nBo Wen\n\n\n2023-09-30\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research.html",

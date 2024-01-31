@@ -1,0 +1,60 @@
+---
+title: "Model Levels -- MOSFET and Inverters"
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+date: 2024-01-28
+description: "All models are wrong, but some are useful -- George Box"
+image: img/MOSFETModelLevels.png
+twitter-card: 
+    image: "img/MOSFETModelLevels.png"
+open-graph: 
+    image: "img/MOSFETModelLevels.png"
+categories:
+  - Model Level
+  - MOSFET
+  - Inverter
+  - Level 2
+  - Positive Sequence
+  - EMT
+  - Phasor
+# doi: 10.59350/cwrq4-m7h10
+citation: false
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+## MOSFET Model Levels
+
+"Model level" is a concept that is very familiar to power electronics engineers when talking about power MOSFETs. In [SIMPLIS](https://www.simplistechnologies.com/documentation/simplis/sp_semi/topics/mosfet_models.htm) which is a well-known power supply simulation package. It defines Level 0, 1, 2, and 3 models for power MOSFETs. 
+
+* Level 0 models a switch with on/off resistance values, a body diode, gate resistance, and gate-to-source capacitance. The Level 0 model can be used in transient and AC analysis simulations.
+
+* Level 1 model adds an output capacitor parallel to the switch. Though it is a lumped linear capacitor, it enables the simulation of soft-switching circuits.
+
+* Level 2 model models a switch with forward transconductance gain, a body diode, and gate-to-source capacitance, plus nonlinear Gate-Drain, Drain-Source, and Gate-Source capacitors. It enables the simulation of switching losses, voltage and current stresses.
+
+## Inverter Model Levels
+
+Modern power system design and analysis uses power flow or load flow simulation, dynamic simulation, and EMT simulation. For an inverter used in a PV or BESS system, different models are used for different simulations. Can we define Level 0, 1, and 2 models for an inverter in power system simulations?
+
+* Inverter Level 0 model -- a model for power flow simulation. The inverter is set as a PQ node (real power P and the reactive power Q are fixed in magnitude) since it is controlled at its MPPT point with a constant power factor.
+
+* Inverter Level 1 model -- a positive sequence phasor model or RMS model for transmission system dynamic simulation. This model describes the system dynamic only at fundamental frequency positive sequence. This kind of model cannot represent sub-line cycle information, so the sub-synchronous oscillation instability problem cannot be studied using such a model.
+
+* Inverter Level 2 model -- an EMT (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, Matlab/Simulink are EMT model simulations.
+
+
+
+|          | Power MOSFET in SIMPLIS | Inverter       |
+|----------|-------------------------|----------------|
+|Level 0| ![SIMPLIS MOSFET Level 0 Model](img/simplis_mosfet_level_0_schematic.png){width=80%} | ![Inverter Level 0 Model](img/Inverter_Level_0.png) |
+|Level 1| ![SIMPLIS MOSFET Level 1 Model](img/simplis_mosfet_level_1_schematic.png){width=80%} | ![Inverter Level 1 Model](img/Inverter_Level_1.png) |
+|Level 2| ![SIMPLIS MOSFET Level 2 Model](img/simplis_mosfet_level_2_schematic.png){width=80%} | ![Inverter Level 2 Model](img/Inverter_Level_1.png) |
+: Analogue between MOSFET Model Levels and Inverter Model Levels  {#tbl-letters}
