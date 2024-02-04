@@ -48,7 +48,7 @@ Modern power system design and analysis uses power flow or load flow simulation,
 
 * Inverter Level 1 model -- a positive sequence phasor model or RMS model for transmission system dynamic simulation. This model describes the system dynamic only at fundamental frequency positive sequence. This kind of model cannot represent sub-line cycle information, so the sub-synchronous oscillation instability problem cannot be studied using such a model.
 
-* Inverter Level 2 model -- an EMT (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, Matlab/Simulink are EMT model simulations.
+* Inverter Level 2 model -- an EMT (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, and Matlab/Simulink are EMT model simulations.
 
 
 
@@ -56,5 +56,5 @@ Modern power system design and analysis uses power flow or load flow simulation,
 |----------|-------------------------|----------------|
 |Level 0| ![SIMPLIS MOSFET Level 0 Model](img/simplis_mosfet_level_0_schematic.png){width=80%} | ![Inverter Level 0 Model](img/Inverter_Level_0.png) |
 |Level 1| ![SIMPLIS MOSFET Level 1 Model](img/simplis_mosfet_level_1_schematic.png){width=80%} | ![Inverter Level 1 Model](img/Inverter_Level_1.png) |
-|Level 2| ![SIMPLIS MOSFET Level 2 Model](img/simplis_mosfet_level_2_schematic.png){width=80%} | ![Inverter Level 2 Model](img/Inverter_Level_1.png) |
+|Level 2| ![SIMPLIS MOSFET Level 2 Model](img/simplis_mosfet_level_2_schematic.png){width=80%} | ![Inverter Level 2 Model](img/Inverter_Level_2.png) |
 : Analogue between MOSFET Model Levels and Inverter Model Levels  {#tbl-letters}
