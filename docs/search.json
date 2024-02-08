@@ -175,20 +175,6 @@
     "text": "Welcome to my personal website!\nAs a researcher, engineer, reader, and coffee lover, my area of expertise centers around Power Electronics technology, with a specific focus on expediting the transition to low-carbon technologies, such as renewable energy, microgrid, electric vehicles, and data center power systems."
   },
   {
-    "objectID": "project/2023/11/24/index.html",
-    "href": "project/2023/11/24/index.html",
-    "title": "Impedance Modeling of Grid-following and Grid-forming Inverters",
-    "section": "",
-    "text": "Three-phase NPC Cricuit\n\n\n\n\nTable 1: Three-level NPC Phase-leg Waveforms\n\n\n\n\n\n\nWaveforms\nThree-level NPC Phase-leg\n\n\n\n\n\n\n\n\n\n\n\\[\n\\left[ \\begin{array}{c}\nv_\\textit{AO} \\\\\nv_\\textit{BO} \\\\\nv_\\textit{CO}\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{cc}\nS_{\\textit{AP}} & S_{\\textit{BN}} \\\\\nS_{\\textit{BP}} & S_{\\textit{BN}} \\\\\nS_{\\textit{CP}} & S_{\\textit{CN}}\n\\end{array} \\right]\n\\cdot\n\\left[ \\begin{array}{c}\nv_\\textit{PO} \\\\\nv_\\textit{NO}\n\\end{array} \\right]\n\\]\n\n\n\nThree-phase NPC SW Function Cricuit"
-  },
-  {
-    "objectID": "project/2023/11/24/index.html#the-north-america-electrical-grid-interconnections",
-    "href": "project/2023/11/24/index.html#the-north-america-electrical-grid-interconnections",
-    "title": "Impedance Modeling of Grid-following and Grid-forming Inverters",
-    "section": "",
-    "text": "Three-phase NPC Cricuit\n\n\n\n\nTable 1: Three-level NPC Phase-leg Waveforms\n\n\n\n\n\n\nWaveforms\nThree-level NPC Phase-leg\n\n\n\n\n\n\n\n\n\n\n\\[\n\\left[ \\begin{array}{c}\nv_\\textit{AO} \\\\\nv_\\textit{BO} \\\\\nv_\\textit{CO}\n\\end{array} \\right]\n=\n\\left[ \\begin{array}{cc}\nS_{\\textit{AP}} & S_{\\textit{BN}} \\\\\nS_{\\textit{BP}} & S_{\\textit{BN}} \\\\\nS_{\\textit{CP}} & S_{\\textit{CN}}\n\\end{array} \\right]\n\\cdot\n\\left[ \\begin{array}{c}\nv_\\textit{PO} \\\\\nv_\\textit{NO}\n\\end{array} \\right]\n\\]\n\n\n\nThree-phase NPC SW Function Cricuit"
-  },
-  {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Project",
