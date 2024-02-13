@@ -1,0 +1,93 @@
+---
+title: "FERC Order No. 901"
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+date: 2024-02-07
+description: "New grid code is on its way!"
+image: img/FERC901.webp
+twitter-card: 
+    image: "img/FERC901.webp"
+open-graph: 
+    image: "img/FERC901.webp"
+categories:
+  - Model
+  - IBR
+  - Inverter
+  - FERC
+  - Positive Sequence
+  - EMT
+  - NERC
+  - Reliability
+  - Model Validation
+  - Data Sharing
+# doi: 10.59350/cwrq4-m7h10
+citation: false
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+## FERC Order No. 901
+
+@fig-FERC901 is my summary of the Federal Energy Regulatory Commission ([FERC](https://www.ferc.gov/)) [Order No. 901](https://www.ferc.gov/media/e-1-rm22-12-000). In October 2023, FERC issued [Order No. 901](https://www.ferc.gov/media/e-1-rm22-12-000) directing the North American Electric Reliability Corporation ([NERC](https://www.nerc.com/Pages/default.aspx)), the Commission-certified Electric Reliability Organization (ERO), to develop new or modified Reliability Standards to specifically address reliability gaps associated with inverter-based resources (IBR) – including PV, wind generation, and battery energy storage.
+
+![FERC Order No. 901](img/New%20North%20America%20Grid%20Code%20On%20Its%20Way.png){#fig-FERC901 width=200%}
+
+From FERC's perspective, “the currently effective Reliability Standards do not ensure that Bulk-Power System planners and operators have the necessary tools to plan for and reliably integrate IBRs into the Bulk-Power System”.
+ 
+As shown in @fig-FERC901, FERC wants all the directed Reliability Standards effective and enforceable **well in advance of 2030** ensuring an orderly **industry transition** for complying with IBR directives in Order No. 901 prior to 2030.
+
+By **November 4, 2024**, NERC must submit new or modified Reliability Standards that establish IBR performance requirements for IBR frequency and voltage ride through, post-disturbance ramp rates, phase-locked loop synchronization, and other known causes of IBR tripping or momentary cessation. NERC must also submit Reliability Standards that require disturbance monitoring data sharing and post-event performance validation for registered IBRs. 
+
+By **November 4, 2025**, NERC must submit Reliability Standards addressing the interrelated directive concerning: (1) data sharing for registered IBRs, unregistered IBRs, and IBR-DERs in the aggregate; (2) data and model validation for registered IBRs.
+
+By **November 4, 2026**, NERC must submit Reliability Standards addressing planning and operational studies for registered IBRs.
+
+## Current NERC Reliability Standards
+
+As the designated ERO by [FERC](https://www.ferc.gov/), [NERC](https://www.nerc.com/Pages/default.aspx) was formed and its standards became mandatory and enforceable in the US for the first time on June 18, 2007. 
+
+The current [Reliability Standards for the Bulk Electric Systems of North America](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) is a document with over 1800 pages. Covering the following topics:
+
+* BAL: Resource and Demand Balancing
+* CIP: Critical Infrastructure Protection
+* COM: Communications
+* EOP: Emergency Preparedness and Operations
+* FAC: Facilities Design, Connections, and Maintenance
+* INT: Interchange Scheduling and Coordination
+* IRO: Interconnection Reliability Operations and Coordination
+* MOD: Modeling, Data, and Analysis
+* NUC: Nuclear
+* PER: Personnel Performance, Training, and Qualifications
+* PRC: Protection and Control
+* TOP: Transmission Operations
+* TPL: Transmission Planning
+* VAR: Voltage and Reactive
+
+## IBR-related Reliability Gaps
+
+* Data Sharing:
+  - The currently effective Reliability Standards do not require data that accurately represents IBRs to be provided to planning coordinators, transmission planners, reliability coordinators, transmission operators, and balancing authorities. Examples of needed data may include location, capacity, telemetry, steady-state, dynamic, and short-circuit modeling information, control settings, ramp rates, equipment status, and disturbance analysis data.
+  - Reliability Standard MOD-032-1 does not require generator owners to submit registered IBR-specific modeling data and parameters such as control setting for momentary cessation and ramp rates, which are necessary for modeling steady and dynamic registered IBR performance for purposes of planning the Bulk-Power System (BPS).
+  - Reliability Standard TOP-003-5 does not require generator owners to submit registered IBR-specific modeling data and parameters to their transmission operators or balancing authorities.
+  - Current effective Reliability Standards do not ensure that BPS planners and operators receive disturbance monitoring data regarding all generation resources capable of having a material impact on the reliable operation of the BPS, including registered IBR. Such data is needed to adequately assess disturbance events and the behavior of IBRs during those events. (**_Can IBR monitor the data and report?_**)
+  - Current effective Reliability Standards do not require Bulk-Power-System planners and operators to receive modeling data and parameters regarding unregistered IBRs. BPS planners and operators do not currently have the data to accurately model the behavior of registered and unregistered IBRs, and IBR-DERs for steady-state, dynamic, and short-circuit studies.
+* Data and Model Validation
+  - The currently effective Reliability Standards do not require the use of NERC's approved (in 2015) component models. The user-defined models in system models can be problematic.
+  - Current effective Reliability Standards MOD-026-1 and MOD-027-1 do not require a generator owner to provide verified models and data for IBR-specific controls to its transmission planner. 
+  - Current Reliability Standards neither require the transmission owner for unregistered IBRs to provide verified dynamic models nor require distribution providers to provide verified dynamic models of IBR-DERs.
+  - Current effective Reliability Standards neither require IBR-DERs in the aggregate to submit the respective dynamic models to the applicable registered entities that perform planning and operations functions.
+  - Current Reliability Standard MOD-033-2 requires validation using real-world data of the interconnection-wide model, the current effective Reliability Standards lack clarity as to whether models of registered IBRs, unregistered IBRs, and IBR-DERs in the aggregate are required to represent the real-world behavior of the equipment installed.
+  - Current Reliability Standards do not require that any changes to IBR settings, configurations, and ratings are updated.
+  - NERC annually assesses the interconnection-wide model quality and publishes a report to help entities responsible for complying with Reliability Standard MOD-032 to resolve model issues and improve the cases. NERC's [2021 Case Quality Metrics Assessment](https://www.nerc.com/pa/RAPA/ModelAssessment/ModAssessments/2021_Case_Quality_Metrics_Assessment-FINAL.pdf) indicates that planners are not able to develop accurate system models. All interconnections demonstrate either a consistent performance or a worsening score in the unacceptable or not recommended model metrics.
+  - Reliability Standards MOD-032-1 and MOD-033-2 do not require the applicable entities to work collaboratively to create interconnection-wide models that accurately reflect the real-world interconnection-wide performance and behavior of registered and unregistered IBRs individually and in the aggregate, as well as IBR-DERs in aggregate.
+
+## My Thoughts
+
+After reading the Order, I feel that FERC is very anxious about IBR’s impact on North American BPS. FERC wants no more IBR tripping (momentary cessation). The try-and-error method of operating IBRs in the grid starts reaching its limit while the grid is retiring synchronous generators. I am well aware of IEEE-1547 and IBR control and stability analysis, however, I was shocked that in the past decade, our grid has been planned and operated without using IBR data and models. For a power electronics engineer, it’s like controlling your converter with a feedback loop’s PI parameters set by guessing. Now, we need to study the system carefully to derive our plant transfer function (model) validate it with measurement and design the system with a good amount of stability margin! However, the power system is more complicated than a single converter!

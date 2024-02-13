@@ -44,11 +44,11 @@ execute:
 
 Modern power system design and analysis uses power flow or load flow simulation, dynamic simulation, and EMT simulation. For an inverter used in a PV or BESS system, different models are used for different simulations. Can we define Level 0, 1, and 2 models for an inverter in power system simulations?
 
-* Inverter Level 0 model -- a model for power flow simulation. The inverter is set as a PQ node (real power P and the reactive power Q are fixed in magnitude) since it is controlled at its MPPT point with a constant power factor.
+* Inverter Level 0 model -- a model for _**power flow**_ simulation. The inverter is set as a PQ node (real power P and the reactive power Q are fixed in magnitude) since it is controlled at its MPPT point with a constant power factor.
 
-* Inverter Level 1 model -- a positive sequence phasor model or RMS model for transmission system dynamic simulation. This model describes the system dynamic only at fundamental frequency positive sequence. This kind of model cannot represent sub-line cycle information, so the sub-synchronous oscillation instability problem cannot be studied using such a model.
+* Inverter Level 1 model -- a _**positive sequence phasor**_ model or _**RMS**_ model for transmission system dynamic simulation. This model describes the system dynamic only at fundamental frequency positive sequence. This kind of model cannot represent sub-line cycle information, so the sub-synchronous oscillation instability problem cannot be studied using such a model.
 
-* Inverter Level 2 model -- an EMT (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, and Matlab/Simulink are EMT model simulations.
+* Inverter Level 2 model -- an _**EMT**_ (Electromagnetic Transient) model. This model represents the whole inverter by its full differential equations. Most power converter circuit simulations done by SIMPLIS, PLECS, PSim, and Matlab/Simulink are EMT model simulations.
 
 
 
