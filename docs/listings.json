@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/research.html",
+    "items": [
+      "/research_papers/JESTPE_Zdqspec.html",
+      "/research_papers/TPEL_ZGTI.html",
+      "/research_papers/TPEL_Syn_Unstable.html",
+      "/research_papers/TPEL_GNC.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/blog/2023/11/02/index.html",
@@ -13,15 +22,6 @@
     "listing": "/project.html",
     "items": [
       "/project/2023/11/24/index.html"
-    ]
-  },
-  {
-    "listing": "/research.html",
-    "items": [
-      "/research_papers/JESTPE_Zdqspec.html",
-      "/research_papers/TPEL_ZGTI.html",
-      "/research_papers/TPEL_Syn_Unstable.html",
-      "/research_papers/TPEL_GNC.html"
     ]
   }
 ]
