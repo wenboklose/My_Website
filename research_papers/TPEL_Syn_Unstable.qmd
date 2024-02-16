@@ -30,3 +30,5 @@ execute:
 Grid synchronization stability issues and subsynchronous oscillations between synchronous generators exist in electrical power systems. Three-phase voltage-source converters (VSCs) are being installed more and more in the grid to improve efficiency or to utilize renewable energy sources. The same stability issues between VSCs are also reported and analyzed using a small-signal model of phase-locked loops (PLLs). This paper proposes a different impedance-based analysis method. The proposed method shows that synchronization instability in a VSC system is due to the negative incremental resistance behavior of grid-tied inverters' impedance when they are modeled in the d-q frame. System can be stabilized simply by changing the inverter's PLL design. Experimental results verify the analysis and the proposed method.
 
 ![Fig.1 Synchronization Instability](/images/Research/TPEL_Syn_Unstable_Fig27_b.jpg){width=80%}
+
+{{< video videoV/TPEL_Syn_Unstable.mp4 >}}
