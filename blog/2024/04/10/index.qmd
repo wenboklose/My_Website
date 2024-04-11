@@ -3,7 +3,7 @@ title: "Subsynchronous Oscillation Screening"
 author:
   - name: Bo Wen
     url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
-date: 2024-02-27
+date: 2024-04-10
 description: "Sub-synchronous Oscillations can also occur in parts of a weak system that does not necessarily comprise of series-compensated transmission circuits. -- NERC Reliability Guideline March 2023"
 image: img/SSO.webp
 twitter-card: 
