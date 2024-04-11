@@ -1,0 +1,80 @@
+---
+title: "Subsynchronous Oscillation Screening"
+author:
+  - name: Bo Wen
+    url: https://scholar.google.co.uk/citations?user=cZKe8UMAAAAJ&hl=en
+date: 2024-02-27
+description: "Sub-synchronous Oscillations can also occur in parts of a weak system that does not necessarily comprise of series-compensated transmission circuits. -- NERC Reliability Guideline March 2023"
+image: img/SSO.webp
+twitter-card: 
+    image: "img/SSO.webp"
+open-graph: 
+    image: "img/SSO.webp"
+categories:
+  - SSR
+  - SSO
+  - Inverter
+  - NERC
+  - Generator
+  - SSCI
+  - Capacitor
+  - Series compensation
+  - Weak grid
+  - PLL
+  - EMT
+  - PSCAD
+  - RMS
+  - PSS/E
+# doi: 10.59350/cwrq4-m7h10
+citation: false
+format:
+  html:
+    code-fold: true
+    fig-height: 4
+    fig-width: 4
+    fig-align: center
+execute: 
+  echo: false
+---
+
+In [Prof. Prabha Kundur](https://scholar.google.com/citations?user=p3wj3EsAAAAJ&hl=en)'s book '_[Power System Stability and Control](https://books.google.com/books/about/Power_System_Stability_and_Control.html?id=wOlSAAAAMAAJ&source=kp_book_description)_', the discussion on the _Subsynchronous Oscillations_ (SSO) begins from torsional oscillations and modeling the turbine-generator shaft system. Then the phenomenon of _Subsynchronous Resonance_ (SSR) is defined as _sustained or negatively damped subsynchronous oscillations in a series capacitor-compensated transmission network caused by two distinctive mechanisms: (a) self-excitation due to induction generator effect and (b) interactions with torsional oscillations_.
+
+It is not clear what are the exact definitions of these two terms, SSR and SSO. There are also terms called  _Subsynchronous Control Interaction_ (SSCI) and _Subsynchronous Torsional Interaction_ (SSTI). It is important to know what these terms are talking about.
+
+I found the following papers give very good explanations for these similar terms.
+
+* [_Terms, Definitions and Symbols for Subsynchronous Oscillations_](https://ieeexplore.ieee.org/document/4113230)
+* [_Reader's Guide to Subsynchronous Resonance_](https://ieeexplore.ieee.org/document/141698)
+* [_Sub-Synchronous Control Interactions between Type 3 Wind Turbines and Series Compensated AC Transmission Systems_](https://ieeexplore.ieee.org/document/6039426)
+* [_Simplified Model to Study the Induction Generator Effect of the Subsynchronous Resonance Phenomenon_](https://ieeexplore.ieee.org/document/8272452)
+* [_Second Benchmark Model for Computer Simulation of Subsynchronous Resonance_](https://ieeexplore.ieee.org/document/4118844)
+
+## SSR
+
+SSR is the oscillation of electrical and mechanical variables associated with turbine-generators when coupled to a series capacitor-compensated transmission system where the oscillatory energy interchange is lightly damped, undamped, or even negatively damped and growing.
+
+SSR is a combined or separated effect of torsional interaction, induction generator effect, and torque amplification.
+
+![Subsynchronous Resonance](img/SSR.png)
+
+## SSO/SSTI
+
+SSO is defined as device-dependent interaction. Such interaction has been observed on HVDC converters, power system stabilizers and FACTS devices located near a turbine generator. Some papers also define this oscillation as Subsynchronous Torsional Interaction (SSTI).
+
+![Subsynchronous Oscillation](img/SSTI.png)
+
+## SSCI
+
+Existing papers define subsynchronous Control Interaction (SSCI) as interactions that can occur between power electronics converters and a series capacitor. It does not involve a mechanical interaction with any turbine generator. However, it could also happen between a utility-scale PV inverter (PVI)  and a transmission system without a series capacitor due to the small-signal negative resistance caused by the Phase-Locked Loop (PLL). Utility Battery Energy Storage System (BESS) Power Conditing System (PCS) converters are now grid-forming controlled. A scenario where only PV inverters operate without any BESS is currently unstable but may become viable with further advancements in PV inverter technology, such as incorporating grid-forming capabilities, to provide sufficient sub-synchronous oscillation damping.
+
+![Subsynchronous Control Interaction](img/SSCI.png)
+
+## Negative Resistance
+
+[Grid-tied Inverter](/research_papers/TPEL_ZGTI.qmd) features a small-signal negative resistance in its output impedance due to PLL when modeled in the Synchronous Reference Frame (SRF). [Synchronization Instability](/research_papers/TPEL_Syn_Unstable.qmd) could happen between the inverter and other converters in the same system.
+
+What is very interesting to me is that in the SSR analysis, the Induction Generator Effect (IGE) also induces a negative resistance. When an SSR happens, [it can be observed that the synchronous generator embeds a "parasitic" induction generator. If the stator "sees" a rotor turning at a frequency above the synchronous one, then the slip is negative and the equivalent circuit exhibits a negative resistance](https://ieeexplore.ieee.org/document/8272452). [At high degrees of compensation, this apparent negative resistance may exceed the network resistance, effectively resulting in an _RLC_ circuit with negative resistance. Such a condition will result in self-excitation causing electrical oscillations of intolerable levels](https://books.google.com/books/about/Power_System_Stability_and_Control.html?id=wOlSAAAAMAAJ&source=kp_book_description).
+
+## SSCI in Power System Impact Study
+
+Subsynchronous Test: Perform a frequency scan sweep to measure the subsynchronous impedance as seen from the inverter's perspective over the range of 5 to 55 Hz. This is documented in ERCOT's Dynamic Working Group Procedure Manual. [Electranix's SSCI Detailed Evaluation Using PSCAD](https://www.electranix.com/wp-content/uploads/2021/04/Technical-Memo-SSCI-Detailed-Evaluation_Rev-0.pdf) is also a good material to read. Other methods can be found [here](/blog/2023/11/02/index.qmd).
